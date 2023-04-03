@@ -983,7 +983,8 @@ h6 {
   position: relative;
   overflow: hidden;
   max-width: 530px;
-  margin: auto auto 1rem;
+  margin: 3% !important;
+  border-radius: 2%;
 }
 
 .portfolio-item .caption {
@@ -1001,6 +1002,12 @@ h6 {
   color: #fff;
   margin: auto 2rem 2rem;
   text-shadow: 0px 0px 20px #000000;
+}
+
+.portfolio-item .caption-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3%;
+  border-radius: 2%;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -1036,9 +1043,9 @@ h6 {
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
     transition: text-shadow 0.25s;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    margin-bottom: 1.0rem;
   }
   .portfolio-item .caption .caption-content h4 {
     transition: color 0.25s;
@@ -1049,13 +1056,14 @@ h6 {
     clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(1rem);
-    clip-path: inset(1rem);
+    -webkit-clip-path: inset(0.5rem);
+    clip-path: inset(0.5rem);
+    border-radius: 2%;
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(41, 136, 188, 0.9); /*rgba(29, 128, 159, 0.9)*/
-    -webkit-clip-path: inset(1rem);
-    clip-path: inset(1rem);
+    background-color: rgba(41, 136, 188, 0.75); /*rgba(29, 128, 159, 0.9)*/
+    -webkit-clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
+    clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
   }
   .portfolio-item:hover .caption .caption-content {
     text-shadow: none;
@@ -1065,17 +1073,17 @@ h6 {
 
 @media (min-width: 1200px) {
   .portfolio-item .caption .caption-content {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(1.5rem);
-    clip-path: inset(1.5rem);
+    -webkit-clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
+    clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
   }
   .portfolio-item:hover .caption {
-    -webkit-clip-path: inset(1.5rem);
-    clip-path: inset(1.5rem);
+    -webkit-clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
+    clip-path: inset(0.5rem 0.5rem 0.5rem 0.5rem round 0.5rem);
   }
 }
 
