@@ -25,11 +25,19 @@
     <!-- Custom CSS -->
     <link href="css/combined.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   </head>
 
   <body id="page-top">
+    <!--  Components -->
+<div id="app_component" class="experiment-block">
+  <portfolio v-bind:items="portfolioItems"/>
+</div>
+
+    <div id="app">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" style="font-family: &#x27;Montserrat&#x27;, &#x27;Helvetica Neue&#x27;, Helvetica, Arial, sans-serif;" href="#page-top"><b>Josselin Somerville</b></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +64,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
         
     <!-- Intro -->
     <section class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem">
@@ -122,6 +130,8 @@
       </div>
     </section>-->
 
+    
+
     <!-- Portfolio -->
     <section class="content-section" id="projects">
       <div class="container">
@@ -133,29 +143,15 @@
           <p class="lead">Here you can see some of the projects I've done on my own time.</p>
           <p class="lead">(Somewhat outdated, will update soon. Grad student life is very busy!)</p>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-4">
-            <a class="portfolio-item" data-toggle="modal" href="#portfolioModal1">
-              <span class="caption">
-                <span class="caption-content">
-                  <h4>Neural Model Library</h4>
-                  <p class="mb-0">Simple creation of feed forward and recurrent neural models in TensorFlow.</p>
-                </span>
-              </span>
-              <img class="img-fluid portfolio-img" src="images/neural_model.png" alt>
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" data-toggle="modal" href="#portfolioModal2">
-              <span class="caption">
-                <span class="caption-content">
-                  <h4>NN Trainer Library</h4>
-                  <p class="mb-0">A library for automatic supervised training of neural models.</p>
-                </span>
-              </span>
-              <img class="img-fluid portfolio-img" src="images/nn_trainer.png" alt>
-            </a>
-          </div>
+        <div class="row no-gutters" id="app_basic">
+          <portfolio-item
+            v-for="item in portfolioItems"
+            :key="item.id"
+            :id="item.id"
+            :title="item.title"
+            :description="item.description"
+            :image="item.image"
+          ></portfolio-item>
           <div class="col-lg-4">
             <a class="portfolio-item" data-toggle="modal" href="#portfolioModal3">
               <span class="caption">
@@ -1136,6 +1132,7 @@ int ackermann(int m, int n) {
     <a class="scroll-to-top js-scroll-trigger" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
+  </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
@@ -1151,8 +1148,138 @@ int ackermann(int m, int n) {
     <!-- Custom scripts -->
     <!--<script src="js/stylish-portfolio.js"></script>-->
     <script src="js/agency.js"></script>
+    <script>
+      // List of to do items (accepts an array as props)
+Vue.component(
+    'portfolio',
+    {
+        props: ['items'],
+        template:
+            `<section class="content-section" id="projects">
+                <div class="container">
+                    <div class="content-section-heading text-center">
+                        <h3 class="text-secondary mb-0">Portfolio</h3>
+                        <h2 class="mb-2">Personal Projects</h2>
+                    </div>
+                    <div class="container text-center mb-5">
+                        <p class="lead">Here you can see some of the projects I've done on my own time.</p>
+                        <p class="lead">(Somewhat outdated, will update soon. Grad student life is very busy!)</p>
+                    </div>
+                    <div class="row no-gutters" id="app_basic">
+                        <portfolio-item
+                        v-for="item in items"
+                        :key="item.id"
+                        :id="item.id"
+                        :title="item.title"
+                        :description="item.description"
+                        :image="item.image"
+                        ></portfolio-item>
+                    </div>
+                </div>
+            </section>`,
+    },
+);
 
-  
+// Renderer for each to do item (accepts one item as props)
+Vue.component(
+    'portfolio-item',
+    {
+        props: {
+            id: {
+              type: Number,
+              required: true
+            },
+            title: {
+              type: String,
+              required: true
+            },
+            description: {
+              type: String,
+              required: true
+            },
+            image: {
+              type: String,
+              required: true
+            }
+          },
+        template:
+            `<div  class="col-lg-4">
+            
+              <!-- Modal -->
+              <div class="portfolio-modal modal fade" :id="'portfolioModal' + id" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl"></div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                          <div class="modal-body">
+                            <h2>{{title}}</h2>
+                            <p class="lead">{{description}}</p>
+                            <!--<img class="img-fluid d-block mx-auto" src="/img/mit_seal_square.jpg" alt="">
+                            <p class="lead">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <p class="lead">This library provides methods for training supervised neural network models without the need to implement all the necessary steps (eg. input handling, reformatting, batching, evaluation, feedback, etc.). It also allows for a large amount of customization in the training and evaluation process, while also making assumptions where possible, in order to minimize required user input.</p>
+                            <p class="lead">More detailed project description coming soon!<br> In the meantime, check out some of my other projects.</p>
+                            <div class="lead mb-4">
+                              <b>View this project on GitHub: </b>
+                              <a href="https://github.com/JosselinSomervilleRoberts/psclib" target="blank">https://github.com/JosselinSomervilleRoberts/psclib</a>
+                              <div class="github-card" data-user="lepture" data-repo="github-cards"></div>
+                              <component is="script" src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js" async></component>
+                            </div>
+                            <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
+                              <i class="fa fa-times"></i> Close Project</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Portfolio item -->
+              <div>
+                <a class="portfolio-item" :href="'#portfolioModal' + id" data-toggle="modal">
+                  <span class="caption">
+                    <span class="caption-content">
+                      <h4>{{title}}</h4>
+                      <p class="mb-0">{{description}}</p>
+                    </span>
+                  </span>
+                  <img class="img-fluid portfolio-img" :src="image" :alt="title">
+                </a>
+              </div>
+            
+            </div>`
+    },
+);
+
+// Setup the data for the to do list (and and attach to index.html)
+new Vue(
+    {
+        el: '#app_component',
+        data: {
+            portfolioItems: [
+                {
+                  id: 0,
+                  title: 'Neural Model Library',
+                  description: 'Simple creation of feed forward and recurrent neural models in TensorFlow.',
+                  image: 'images/neural_model.png',
+                },
+                {
+                  id: 1,
+                  title: 'NN Trainer Library',
+                  description: 'A library for automatic supervised training of neural models.',
+                  image: 'images/nn_trainer.png',
+                },
+              ],
+        },
+    });
+    </script>
+
 
 
 </body></html>
