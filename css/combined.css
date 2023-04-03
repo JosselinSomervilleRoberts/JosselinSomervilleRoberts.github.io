@@ -91,6 +91,14 @@ section h3.section-subheading {
   }
 }
 
+.portfolio-item-description {
+  font-style: italic;
+}
+
+.portfolio-item-paragraph {
+  text-align: justify;
+}
+
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
