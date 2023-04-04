@@ -21,13 +21,12 @@ Vue.component(
                 <div class="row">
                     <div class="col-lg-12 text-center">
                     <h2 class="section-heading mb-2">{{name}}</h2>
-                    <!--<p class="lead mb-5">A little bit about me...</p>-->
                     </div>
                 </div>
                 <div class="container text-center mb-5">
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 blabla">
+                    <div>
                     <ul class="timeline">
                         <timeline-item
                         v-for="item in items"

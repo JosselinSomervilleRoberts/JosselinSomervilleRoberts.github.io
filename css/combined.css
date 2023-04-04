@@ -458,25 +458,14 @@ aside.clients img {
   margin-top: 12px;
 }
 
-.timeline-inverted-body {
-  text-align: justify;
-}
-
-.timeline-body {
-  direction:rtl;
-  text-align:justify;
-}
-
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
-  text-align: justify;
 }
 
-.blabla {
-  width: 1500px !important;
-  margin: 0px !important;
-  padding: 0px !important;
+.timeline-location {
+  font-style: italic;
+  font-size: 20px;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -512,6 +501,16 @@ aside.clients img {
 }
 
 @media (min-width: 768px) {
+
+
+.timeline-inverted-body {
+  text-align: justify;
+}
+
+.timeline-body {
+  text-align:justify;
+}
+
   .timeline:before {
     left: 50%;
   }
@@ -545,6 +544,15 @@ aside.clients img {
 }
 
 @media (min-width: 992px) {
+  .timeline-inverted-body {
+    text-align: justify;
+  }
+  
+  .timeline-body {
+    direction:rtl;
+    text-align:justify;
+  }
+
   .timeline > li {
     min-height: 150px;
   }
@@ -571,7 +579,7 @@ aside.clients img {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 0px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -582,7 +590,7 @@ aside.clients img {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 0px 20px 20px;
   }
 }
 

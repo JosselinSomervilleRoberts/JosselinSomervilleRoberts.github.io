@@ -36,21 +36,21 @@ Vue.component (
             }
         },
         template:
-            `<li v-bind:class="(id%2==0)?'timeline-inverted':'timeline-normal'" style="margin-bottom:32px">
+            `<li v-bind:class="(id%2==0)?'timeline-inverted':'timeline-normal'">
                 <a :href="link" target="blank">
                 <div class="timeline-image">
                     <img class="img-circle img-responsive" :src="image" :alt="title">
                 </div>
                 </a>
                 <div class="timeline-panel">
-                <div class="timeline-heading">
-                    <h5 v-html="dates"></h5>
-                    <h4 class="subheading">
-                    <a :href="link" target="blank">{{title}}</a>, {{subtitle}}<br>{{location}}</h4>
-                </div>
-                <div v-bind:class="(id%2==0)?'timeline-inverted-body':'timeline-body'">
-                    <p class="lead">{{description}}</p>
-                </div>
+                    <div class="timeline-heading">
+                        <h5 v-html="dates" class="timeline-dates"></h5>
+                        <h4 class="subheading">
+                        <a :href="link" target="blank">{{title}}</a>, {{subtitle}}<br><span class="timeline-location">{{location}}</span></h4>
+                    </div>
+                    <div v-bind:class="(id%2==0)?'timeline-inverted-body':'timeline-body'">
+                        <p class="lead">{{description}}</p>
+                    </div>
                 </div>
             </li>`
     },
