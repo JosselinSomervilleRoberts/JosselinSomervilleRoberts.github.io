@@ -25,6 +25,7 @@ Vue.component(
                         :id="row.id"
                         :name="row.name"
                         :items="row.items"
+                        :githubusername="githubusername"
                         ></portfolio-row>
                     </div>
                 </div>
