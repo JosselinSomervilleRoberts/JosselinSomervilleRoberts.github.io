@@ -36,7 +36,7 @@ Vue.component(
             }
         },
         template:
-            `<section id="about" class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem">
+            `<section id="about" class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem;">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12 col-lg-4">

@@ -4,16 +4,16 @@ new Vue(
         data: {
             name: 'Josselin Somerville Roberts',
             title: 'M.S. Student in CS @ Stanford (2024), Ecole Polytechnique (X19), ex Google Intern, Nation-wide CPGE (PT) Valedictorian (2019)',
-            image: 'images/ted_pic.jpg',
+            image: 'images/josselin.jpg',
             linkedinusername: 'josselin-somerville-roberts',
             email: 'josselin at stanford dot edu',
             stanfordprofile: 'https://profiles.stanford.edu/josselin-somerville-roberts',
             githubusername: 'JosselinSomervilleRoberts',
 
             introitems: [
-                'I am a Master\'s student in Computer Science at Stanford University, where I am advised by <a href="https://profiles.stanford.edu/sergey-levine" target="blank">Sergey Levine</a> and <a href="https://profiles.stanford.edu/jean-claude-latombe" target="blank">Jean-Claude Latombe</a>.',
-                'I am interested in the intersection of machine learning and robotics, and in particular in the application of deep learning to robotics.',
-                'I am also interested in the intersection of machine learning and natural language processing, and in particular in the application of deep learning to natural language processing.',
+                'I am a current Master\'s student in Computer Science (AI Track) at Stanford University, where I am advised by <a href="https://profiles.stanford.edu/christopher-gregg" target="blank">Christopher Gregg</a>. I graduated in 2022 from Ecole Polytechnique (France) where I obtained my Engineering degree (M.S. equivalent) in Computer Science and Applied Mathematics (Image, Vision, and Learning track). Before that I followed the French CPGE system (PT) at Lycée Jean-Baptiste Say (France), where I graduated as <a href="https://www.banquept.fr/2019_result/resultats_concours.php">valedictorian</a> (2500 candidates) in 2019.',
+                'I am interested in the intersection of machine learning and robotics, and in particular in the application of deep learning to robotics. This includes Computer Vision, Reinforcement Learning and also Natural Language Processing.',
+                'I currently work at the <a href="https://crfm.stanford.edu/">Stanford CRFM (Center for Research on Foundation Models</a> on the <a href="https://github.com/stanford-crfm/helm">HELM project</a> under the supervision of <a href="https://cs.stanford.edu/~pliang/>Percy Liang</a>',
             ],
 
             portfoliorows: [

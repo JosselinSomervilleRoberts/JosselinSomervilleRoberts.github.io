@@ -83,6 +83,11 @@ section h2.section-heading {
   font-size: 18px;
 }
 
+#intro-section > p > a {
+  color: rgb(197, 121, 29);
+  font-weight: 500;
+}
+
 
 
 section h3.section-subheading {
