@@ -32,7 +32,10 @@
   <body id="page-top">
     <!--  Components -->
 <div id="app_component" class="experiment-block">
-  <portfolio v-bind:items="portfolioItems" v-bind:githubusername="githubusername" />
+  <app v-bind:githubusername="githubusername" v-bind:portfolioitems="portfolioitems" v-bind:jobitems="timelineitems" />
+
+
+  
 </div>
 
     <div id="app">
@@ -1152,7 +1155,10 @@ int ackermann(int m, int n) {
     <!-- Custom components -->
     <script src="js/components/portfolio.js"></script>
     <script src="js/components/portfolioItem.js"></script>
+    <script src="js/components/timeline.js"></script>
+    <script src="js/components/timelineItem.js"></script>
     <script src="js/components/app.js"></script>
+    <script src="js/components/data.js"></script>
 
 
 

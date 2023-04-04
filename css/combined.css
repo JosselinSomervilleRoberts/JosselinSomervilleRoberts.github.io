@@ -442,10 +442,25 @@ aside.clients img {
   margin-top: 12px;
 }
 
+.timeline-inverted-body {
+  text-align: justify;
+}
+
+.timeline-body {
+  direction:rtl;
+  text-align:justify;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
-  text-align: left;
+  text-align: justify;
+}
+
+.blabla {
+  width: 1500px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
