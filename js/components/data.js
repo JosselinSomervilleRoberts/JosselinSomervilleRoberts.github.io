@@ -2,7 +2,20 @@ new Vue(
     {
         el: '#app_component',
         data: {
+            name: 'Josselin Somerville Roberts',
+            title: 'M.S. Student in CS @ Stanford, Ecole Polytechnique (X19), ex Google Intern, Nation-wide CPGE (PT) Valedictorian (2017)',
+            image: 'images/josselin.jpg',
+            linkedinusername: 'josselin-somerville-roberts',
+            email: 'josselin at stanford dot edu',
+            stanfordprofile: 'https://profiles.stanford.edu/josselin-somerville-roberts',
             githubusername: 'JosselinSomervilleRoberts',
+
+            introitems: [
+                'I am a Master\'s student in Computer Science at Stanford University, where I am advised by <a href="https://profiles.stanford.edu/sergey-levine" target="blank">Sergey Levine</a> and <a href="https://profiles.stanford.edu/jean-claude-latombe" target="blank">Jean-Claude Latombe</a>.',
+                'I am interested in the intersection of machine learning and robotics, and in particular in the application of deep learning to robotics.',
+                'I am also interested in the intersection of machine learning and natural language processing, and in particular in the application of deep learning to natural language processing.',
+            ],
+
             portfoliorows: [
               {
                 id: 0,

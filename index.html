@@ -32,7 +32,18 @@
   <body id="page-top">
     <!--  Components -->
 <div id="app_component" class="experiment-block">
-  <app v-bind:githubusername="githubusername" v-bind:portfoliorows="portfoliorows" v-bind:jobitems="timelineitems" />
+  <app
+    v-bind:name="name"
+    v-bind:email="email"
+    v-bind:linkedinusername="linkedinusername"
+    v-bind:stanfordprofile="stanfordprofile"
+    v-bind:image="image"
+    v-bind:title="title"
+    v-bind:githubusername="githubusername"
+    v-bind:introitems="introitems"
+    v-bind:portfoliorows="portfoliorows"
+    v-bind:jobitems="timelineitems"
+    />
 
 
   
@@ -1153,6 +1164,7 @@ int ackermann(int m, int n) {
     <script src="js/agency.js"></script>
 
     <!-- Custom components -->
+    <script src="js/components/intro.js"></script>
     <script src="js/components/portfolio.js"></script>
     <script src="js/components/portfolioRow.js"></script>
     <script src="js/components/portfolioItem.js"></script>
