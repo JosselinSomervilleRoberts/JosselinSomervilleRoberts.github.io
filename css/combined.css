@@ -76,10 +76,13 @@ section h2.section-heading {
   margin-bottom: 15px;
 }
 
+
+
 section h3.section-subheading {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
+  font-size: 32px;
+  color:rgba(50, 50, 100, 1.0) !important;
+  /* font-weight: 400;
+  font-style: italic; */
   margin-bottom: 75px;
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -93,6 +96,7 @@ section h3.section-subheading {
 
 .portfolio-item-description {
   font-style: italic;
+  margin-top: -3%;
 }
 
 .portfolio-item-paragraph {
@@ -999,6 +1003,14 @@ h6 {
   font-weight: 700;
   display: block;
   max-width: 30rem;
+}
+
+.portfolio-row {
+  margin-top: 3%;
+}
+
+.portfolio-row > h3 {
+  color: #000000 !important;
 }
 
 .portfolio-item {

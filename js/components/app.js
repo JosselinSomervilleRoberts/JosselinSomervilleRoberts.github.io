@@ -2,7 +2,7 @@ Vue.component(
     'app',
     {
         props: {
-            portfolioitems: {
+            portfoliorows: {
                 type: Array,
                 required: true,
             },
@@ -22,7 +22,7 @@ Vue.component(
         template:
             `<div>
                 <portfolio
-                    :items="portfolioitems"
+                    :rows="portfoliorows"
                     :githubusername="githubusername"
                 ></portfolio>
                 <timeline

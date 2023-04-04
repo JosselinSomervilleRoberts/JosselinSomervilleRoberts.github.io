@@ -51,7 +51,7 @@ Vue.component(
                       <div class="row">
                         <div class="col-lg-10 mx-auto">
                           <div class="modal-body">
-                            <h2>{{title}}</h2>
+                            <h2 class="text-primary">{{title}}</h2>
                             <p class="lead portfolio-item-description">{{description}}</p>
                             <div v-if="descriptionhtml" v-html="descriptionhtml"></div>
                             <div v-if="descriptionlist">
@@ -77,7 +77,7 @@ Vue.component(
                 <a class="portfolio-item" :href="'#portfolioModal' + id" data-toggle="modal">
                   <span class="caption">
                     <span class="caption-content">
-                      <h4>{{title}}</h4>
+                      <h4 class="text-secondary">{{title}}</h4>
                       <p class="mb-0">{{description}}</p>
                     </span>
                   </span>
