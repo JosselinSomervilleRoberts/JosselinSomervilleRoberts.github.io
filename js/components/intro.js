@@ -36,19 +36,23 @@ Vue.component(
             }
         },
         template:
-            `<section class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem">
+            `<section id="about" class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12 col-lg-4">
                   <div class="team-member" style="margin-bottom:24px">
                     <img :src="image" style="border:8px solid white; width:350px!important; height:100%" class="img-responsive img-circle" alt="Josselin Somerville">
                     <div id="social1" class="mt-4">
+                      <p class="email">{{email}}</p>
                       <ul class="list-inline social-buttons">
                         <li class="text-center">
                           <a :href="'https://www.linkedin.com/in/' + linkedinusername" target="blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                         <li class="text-center">
                           <a :href="'https://github.com/' + githubusername" target="blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li class="text-center">
+                          <a :href="stanfordprofile"><i class="fa fa-tree"></i></a>
                         </li>
                       </ul>
                     </div>
@@ -59,12 +63,16 @@ Vue.component(
                   <p class="lead"><b>{{title}}</b></p>
                   <p class="lead" style="font-size: 14pt" v-for="item in items" v-html="item"></p>
                   <div id="social2" class="mt-4">
+                    <p class="email">{{email}}</p>
                       <ul class="list-inline social-buttons">
                         <li class="text-center">
                           <a :href="'https://www.linkedin.com/in/' + linkedinusername" target="blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                         <li class="text-center">
                           <a :href="'https://github.com/' + githubusername" target="blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li class="text-center">
+                          <a :href="stanfordprofile"><i class="fa fa-tree"></i></a>
                         </li>
                       </ul>
                     </div>

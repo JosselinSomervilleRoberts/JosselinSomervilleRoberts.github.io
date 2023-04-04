@@ -3,8 +3,8 @@ new Vue(
         el: '#app_component',
         data: {
             name: 'Josselin Somerville Roberts',
-            title: 'M.S. Student in CS @ Stanford, Ecole Polytechnique (X19), ex Google Intern, Nation-wide CPGE (PT) Valedictorian (2017)',
-            image: 'images/josselin.jpg',
+            title: 'M.S. Student in CS @ Stanford (2024), Ecole Polytechnique (X19), ex Google Intern, Nation-wide CPGE (PT) Valedictorian (2019)',
+            image: 'images/ted_pic.jpg',
             linkedinusername: 'josselin-somerville-roberts',
             email: 'josselin at stanford dot edu',
             stanfordprofile: 'https://profiles.stanford.edu/josselin-somerville-roberts',
@@ -72,7 +72,30 @@ new Vue(
           }
           ],
 
-              timelineitems: [
+              jobitems: [
+                {
+                  id: 0,
+                  title: 'Google',
+                  subtitle: 'Software Engineer',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl eget nisl.',
+                  image: 'images/google_square.png',
+                  dates: '2019 - Present',
+                  link: 'https://www.google.com/',
+                  location: 'Mountain View, CA',
+                },
+                {
+                  id: 1,
+                  title: 'University of Toronto',
+                  subtitle: 'PhD in Computer Science',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl eget nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl eget nisl.',
+                  image: 'images/google_square.png',
+                  dates: '2014 - 2019',
+                  link: 'https://www.utoronto.ca/',
+                  location: 'Toronto, ON',
+                }
+              ],
+
+              educationitems: [
                 {
                   id: 0,
                   title: 'Google',

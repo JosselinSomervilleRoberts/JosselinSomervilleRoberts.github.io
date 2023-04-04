@@ -2,22 +2,29 @@ Vue.component(
     'timeline',
     {
         props: {
+            id : {
+                type: String,
+                required: true,
+            },
+            name: {
+                type: String,
+                required: true,
+            },
             items: {
                 type: Array,
                 required: true,
             },
         },
         template:
-            `<section class="content-section bg-light" id="timeline">
+            `<section class="content-section" :id="id">
                 <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                    <h2 class="section-heading mb-2">Timeline</h2>
+                    <h2 class="section-heading mb-2">{{name}}</h2>
                     <!--<p class="lead mb-5">A little bit about me...</p>-->
                     </div>
                 </div>
                 <div class="container text-center mb-5">
-                    <p class="lead">A short summary of my work experience..</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 blabla">

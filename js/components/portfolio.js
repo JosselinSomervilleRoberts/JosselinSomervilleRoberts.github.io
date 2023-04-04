@@ -16,7 +16,7 @@ Vue.component(
                 <div class="container">
                     <div class="content-section-heading text-center">
                         <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
-                        <h2 class="mb-2">Personal & Academic Projects</h2>
+                        <h2 class="section-heading  mb-2">Personal & Academic Projects</h2>
                     </div>
                     <div>
                         <portfolio-row

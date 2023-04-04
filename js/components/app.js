@@ -44,12 +44,13 @@ Vue.component(
             },
             educationitems: {
                 type: Array,
-                required: false,
+                required: true,
             },
         },
         template:
             `<div>
                 <intro
+                    style="padding-top: 150px !important;"
                     :name="name"
                     :image="image"
                     :linkedinusername="linkedinusername"
@@ -64,7 +65,15 @@ Vue.component(
                     :githubusername="githubusername"
                 ></portfolio>
                 <timeline
+                    style="background:#edeeef;"
+                    id="experience"
+                    name="Professional Experience"
                     :items="jobitems"
+                ></timeline>
+                <timeline
+                    id="education"
+                    name="Education"
+                    :items="educationitems"
                 ></timeline>
             </div>`,
     },
