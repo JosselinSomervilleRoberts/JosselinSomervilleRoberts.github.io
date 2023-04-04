@@ -46,10 +46,10 @@ Vue.component (
                     <div class="timeline-heading">
                         <h5 v-html="dates" class="timeline-dates"></h5>
                         <h4 class="subheading">
-                        <a :href="link" target="blank">{{title}}</a>, {{subtitle}}<br><span class="timeline-location">{{location}}</span></h4>
+                        <a :href="link" target="blank">{{title}}</a>, <span v-html="subtitle"></span><br><span class="timeline-location">{{location}}</span></h4>
                     </div>
                     <div v-bind:class="(id%2==0)?'timeline-inverted-body':'timeline-body'">
-                        <p class="lead">{{description}}</p>
+                        <p class="lead" v-html="description"></p>
                     </div>
                 </div>
             </li>`
