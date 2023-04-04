@@ -22,6 +22,22 @@ new Vue(
               name: 'Robotics',
               items: [
               {
+                id: 0,
+                title: 'Chemist robot arm',
+                description: 'I built a robot arm to pickup and pour beakers into other beakers.',
+                image: 'images/projects/robot arm/display.png',
+              },
+              {
+                id: 1,
+                title: 'Mr. Resiskers',
+                description: 'A robot cat that conforts the user through a series of multi-modal, two-way interactions',
+                image: 'images/projects/mr resiskers/display.jpg',
+                descriptionlist: [
+                  'This was the final project of ME218A - Smart Product design. You can find the dedicated website <a href="https://sites.google.com/stanford.edu/mrresiskers">here</a>.',
+                  '<img src="images/projects/mr resiskers/display.png" class="img-fluid">',
+                ],
+              },
+              {
                 id: 2,
                 title: 'Laser Tag equipment',
                 description: 'Since everything was closed during quarantine, I built my own laser tag equipment from scratch.',
@@ -146,8 +162,148 @@ new Vue(
                   '<img src="images/projects/klannbot/front.jpg" class="img-fluid">',
                 ],
               },
+              {
+                id: 6,
+                title: 'PCB 2D Plotter',
+                description: 'This project aimed to build a 2D plotter to draw PCBs.',
+                image: 'images/projects/the drawer/pcb.png',
+              }
             ],
-          }
+          },
+          {
+            id: 2,
+            name: 'Machine Learning',
+            items: [
+              {
+                id: 8,
+                title: 'Multi-task NLP',
+                description: 'Using a single BERT model to perform multiple NLP tasks.',
+                image: 'images/projects/multi_task_nlp/display.jpg',
+                repo: 'CS224N-Project-BERT-MultiTask'
+              },
+              {
+                id: 9,
+                title: 'RL for cleaning streets',
+                description: 'Using a Deep Reinforcement Learning algorithm to train a robot to clean parking lots.',
+                image: 'images/projects/rl_streets/display.png',
+                repo: 'AA228-Project-Autonomous-Vehicle'
+              },
+              {
+                id: 10,
+                title: 'Blackjack counting cards RL agent',
+                description: 'Using a Reinforcement Learning algorithm to count cards in Blackjack.',
+                image: 'images/projects/blackjack/display.jpg',
+                repo: 'BlackJackCountingEnv'
+              },
+              {
+                id: 11,
+                title: 'Starcraft AI',
+                description: 'Using Behaviour Trees to create an AI for Starcraft with BWAPI.',
+                image: 'images/projects/starcraft/display.jpg',
+                repo: 'StarcraftAI'
+              },
+              {
+                id: 12,
+                title: 'RL agents for Ultimate Tic Tac Toe',
+                description: 'Using various Reinforcement Learning algorithms to train an AI to play Ultimate Tic Tac Toe.',
+                image: 'images/projects/ultimate_tic_tac_toe/ultimate tic tac toe.png',
+                repo: 'UltimateTicTacToe-RL'
+              },
+              {
+                id: 13,
+                title: 'H-index prediction',
+                description: 'Using a co-citation network and abstracts to predict the H-index of a researcher.',
+                image: 'images/projects/hindex/display.ppm',
+                repo: 'CS224W-Project-H-Index'
+              },
+              {
+                id: 14,
+                title: 'Auto Speech Bubbles',
+                description: 'Places speech bubble for TV-shows without obstructing the face of the characters.',
+                image: 'images/projects/speech_bubbles/display.png',
+                repo: 'SpeechBubbleSubtitles'
+              },
+              {
+                id: 15,
+                title: 'Airbus Ship Detection',
+                description: 'Using a Convolutional Neural Network to detect ships in satellite images.',
+                image: 'images/projects/airbus detection/Predicted_4.png',
+              },
+              {
+                id: 16,
+                title: 'CG:Shop 2021: Coordinated Motion Planning',
+                description: 'Determining paths for robots moving on the same map.',
+                image: 'images/projects/cgshop/display.jpg',
+                repo: 'robotsCGShop2021'
+              }
+            ],
+          },
+
+          {
+            id: 3,
+            name: '3D Rendering, Animation and Games',
+            items: [
+              {
+                id: 17,
+                title: 'Fast Ocean waves',
+                description: 'Using noise superposition computed on the GPU to render realistic ocean waves.',
+                image: 'images/projects/ocean_waves/final_result.PNG',
+                repo: 'ProjectOcean'
+              },
+              {
+                id: 18,
+                title: 'Screen Space Reflections',
+                description: 'Implemented a renderer with Screen Space Reflections and Ray Tracing.',
+                image: 'images/projects/ssr/final_ssr.PNG',
+                repo: 'MyOpenGlRenderer',
+              },
+              {
+                id: 19,
+                title: 'Echo\'s Adventure',
+                description: 'An interactive world coded from scratch in C++ using OpenGL.',
+                image: 'images/projects/echos adventure/echos_adventure.JPG',
+              },
+              {
+                id: 20,
+                title: 'Pokemon Mystery Dungeon - Remake',
+                description: 'As a fan of Pokemon Mystery Dungeon, I decided to implement my own adaptation of the game using Python and Pygame.',
+                image: 'images/projects/pokemon/Capture.JPG',
+              },
+              {
+                id: 21,
+                title: 'Multiplayer game: Magic Arena',
+                description: 'During my last year of high school, I wanted to learn C++, so I decided to challenge myself to build from scratch an arena game.',
+                image: 'images/projects/magic arena/image 1.png',
+              },
+            ],
+          },
+
+          {
+            id: 4,
+            name: 'Other',
+            items: [
+              {
+                id: 22,
+                title: 'Cemantix - Remake',
+                description: 'Guess the word of the day given the semantic similarity with other words.',
+                image: 'images/projects/SemApi/display.jpg',
+                repo: 'SemAPI'
+              },
+              {
+                id: 23,
+                title: 'Mechanical Analysis of 3D printed infills',
+                description: 'Using Finite Element Analysis to determine the best infill pattern for 3D printed parts.',
+                image: 'images/projects/3d_printing/display.jpg',
+              },
+              {
+                id: 24,
+                title: 'Procedural dialog generation',
+                description: 'As a team of 5 students, we realized a research project during a year to procedurally generate dialogs between two Non-Play Characters (NPC).',
+                image: 'images/projects/psc/graphe.png',
+              },
+            ],
+          },
+
           ],
 
               jobitems: [
