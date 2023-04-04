@@ -19,7 +19,7 @@ new Vue(
             portfoliorows: [
               {
                 id: 0,
-                name: 'Robotics',
+                name: 'Banena',
                 items: [
                 {
                   id: 0,
@@ -46,19 +46,29 @@ new Vue(
             ,
             {
               id: 1,
-              name: 'Banana',
+              name: 'Robotics',
               items: [
               {
-                id: 0,
-                title: 'Neural Model Library',
-                description: 'Simple creation of feed forward and recurrent neural models in TensorFlow.',
-                image: 'images/neural_model.png',
-                repo: 'SpeechBubbleSubtitles',
+                id: 2,
+                title: 'Laser Tag equipment',
+                description: 'Since everything was closed during quarantine, I decided to build my own laser tag equipment from scratch.',
+                image: 'images/projects/laser game/target.JPG',
+                repo: 'LaserGame',
                 descriptionlist: [
-                  'Supports feed forward and recurrent neural models. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliqua',
-                  'Supports feed forward and recurrent neural models. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliqua',
-                  '<img src="images/neural_model.png" alt="Neural Model" class="img-fluid portfolio-img">',
-                  'Test lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam u',
+                  'First, I conducted dozens of tests to see if it was possible to send data via infrared signals using a lens at a long distance. After many experiments, I designed an IR receiver that would not only turn off when hit by the gun but would also notify by Wifi the gun that had fired that it had hit its target.',
+                  'Then I integrated different buttons to the gun for scores, sound, an aiming laser, and a communication network so that every gun can communicate with its targets and the other guns',
+                  'After quite some work, I was finally able to build two test sets and it was a success. It was time to build the entire 8 sets (8 guns, 16 targets) that I wanted. As a reference, the 3D printing took nearly two months while printing 24/7.',
+                  '<img src="images/projects/laser game/construction.jpg" alt="Neural Model" class="img-fluid">',
+                  'At the same time, I designed custom PCBs for the targets, the guns, and even a charger (to charge all 24 devices at the same time).',
+                  `<div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img src="images/projects/laser game/construction.jpg" alt="inn_logo" class="img-fluid" /></a>
+                  </div>
+                  <div class="col-md-6">
+                      <a href="#" ><img src="images/projects/laser game/construction.jpg" alt="ccs_logo"  class="img-fluid"/></a>
+                  </div>
+              </div>`,
+                  'After months of sanding, painting, assembling, and coding, I now have 8 laser tag sets to play with!',
                 ]
               },
               {
@@ -147,7 +157,7 @@ new Vue(
 
               educationitems: [
                 {
-                  id: 0,
+                  id: 7,
                   title: 'Stanford',
                   subtitle: 'M.S in Computer Science',
                   description: 'Artificial intelligence Track<br/><b>GPA: 4.05</b>',
@@ -157,7 +167,7 @@ new Vue(
                   location: 'Stanford, CA',
                 },
                 {
-                  id: 1,
+                  id: 8,
                   title: 'Ecole Polytechnique',
                   subtitle: 'Engineering diploma<br/>(M.S + B.S. equivalent)',
                   description: 'Image, Vision and Machine Learning<br/><b>GPA: 3.93</b>',
@@ -167,7 +177,7 @@ new Vue(
                   location: 'Palaiseau, Franche',
                 },
                 {
-                  id: 2,
+                  id: 9,
                   title: 'Lycée Jean-Baptiste Say',
                   subtitle: 'PTSI/PT* (French CPGE)',
                   description: '2 years of intensive preparation for the French engineering school entrance exams (undergraduate level).<br/><b>GPA: 4.00</b>',
