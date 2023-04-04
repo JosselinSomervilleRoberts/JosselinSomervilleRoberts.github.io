@@ -17,33 +17,6 @@ new Vue(
             ],
 
             portfoliorows: [
-              {
-                id: 0,
-                name: 'Banena',
-                items: [
-                {
-                  id: 0,
-                  title: 'Neural Model Library',
-                  description: 'Simple creation of feed forward and recurrent neural models in TensorFlow.',
-                  image: 'images/neural_model.png',
-                  repo: 'SpeechBubbleSubtitles',
-                  descriptionlist: [
-                    'Supports feed forward and recurrent neural models. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliqua',
-                    'Supports feed forward and recurrent neural models. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc, vitae aliqua',
-                    '<img src="images/neural_model.png" alt="Neural Model" class="img-fluid portfolio-img">',
-                    'Test lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam u',
-                  ]
-                },
-                {
-                  id: 1,
-                  title: 'NN Trainer Library',
-                  description: 'A library for automatic supervised training of neural models.',
-                  image: 'images/nn_trainer.png',
-                  repo: 'SpeechBubbleSubtitles',
-                },
-              ],
-            }
-            ,
             {
               id: 1,
               name: 'Robotics',
@@ -51,33 +24,92 @@ new Vue(
               {
                 id: 2,
                 title: 'Laser Tag equipment',
-                description: 'Since everything was closed during quarantine, I decided to build my own laser tag equipment from scratch.',
+                description: 'Since everything was closed during quarantine, I built my own laser tag equipment from scratch.',
                 image: 'images/projects/laser game/target.JPG',
                 repo: 'LaserGame',
                 descriptionlist: [
                   'First, I conducted dozens of tests to see if it was possible to send data via infrared signals using a lens at a long distance. After many experiments, I designed an IR receiver that would not only turn off when hit by the gun but would also notify by Wifi the gun that had fired that it had hit its target.',
                   'Then I integrated different buttons to the gun for scores, sound, an aiming laser, and a communication network so that every gun can communicate with its targets and the other guns',
                   'After quite some work, I was finally able to build two test sets and it was a success. It was time to build the entire 8 sets (8 guns, 16 targets) that I wanted. As a reference, the 3D printing took nearly two months while printing 24/7.',
-                  '<img src="images/projects/laser game/construction.jpg" alt="Neural Model" class="img-fluid">',
-                  'At the same time, I designed custom PCBs for the targets, the guns, and even a charger (to charge all 24 devices at the same time).',
+                  '<img src="images/projects/laser game/construction.jpg" class="img-fluid">',
                   `<div class="row">
-                  <div class="col-md-6">
-                      <a href="#"><img src="images/projects/laser game/construction.jpg" alt="inn_logo" class="img-fluid" /></a>
-                  </div>
-                  <div class="col-md-6">
-                      <a href="#" ><img src="images/projects/laser game/construction.jpg" alt="ccs_logo"  class="img-fluid"/></a>
-                  </div>
-              </div>`,
+                      <div class="col-md-6">
+                          <a href="#"><img src="images/projects/laser game/gun_solidworks.jpg" class="img-fluid" /></a>
+                      </div>
+                      <div class="col-md-6">
+                          <a href="#" ><img src="images/projects/laser game/gun.jpg" class="img-fluid" /></a>
+                      </div>
+                  </div>`,
+                  'At the same time, I designed custom PCBs for the targets, the guns, and even a charger (to charge all 24 devices at the same time).',
+                  '<img src="images/projects/laser game/circuits_combined.JPG" class="img-fluid">',
+                  '<img src="images/projects/laser game/gun_open.jpg" class="img-fluid">',
                   'After months of sanding, painting, assembling, and coding, I now have 8 laser tag sets to play with!',
+                  '<img src="images/projects/laser game/playing.JPG" class="img-fluid">',
+                  '<img src="images/projects/laser game/target.JPG" class="img-fluid">',
+                  '<img src="images/projects/laser game/target_blue.jpg" class="img-fluid">',
                 ]
               },
               {
-                id: 1,
-                title: 'NN Trainer Library',
-                description: 'A library for automatic supervised training of neural models.',
-                image: 'images/nn_trainer.png',
-                repo: 'SpeechBubbleSubtitles',
+                id: 3,
+                title: 'Hexapod - Bob v3',
+                description: 'After Bob v2, I was more than ever motivated to build a working hexapod!',
+                image: 'images/projects/bob v3/back.jpg',
+                descriptionlist: [
+                  'As I had learned with Bob v2, I needed to conduct many experiments to validate the new leg design I came up with before starting to print the other legs.',
+                  'I decided to use more expensive motors that were more reliable and easier to communicate with as they used bus communication.',
+                  'To be sure that I had properly tested the leg, I decided to code every single feature that I wanted Bob v3 to have on the test leg. This included inverse kinematics, motion control with feedback, control of temperature and intensity, and more.',
+                  'I also conducted many tests to validate the motor I was using such as torque and speed measurement, long use to check the durability and even motion analysis.',
+                  '<img src="images/projects/bob v3/leg.jpg" class="img-fluid">',
+                  'After a few months, I had conducted every single test that I could think of and coded every feature imaginable. I also made several variations to improve the print quality without compromising the speed of the print.',
+                  'Therefore I was confident that this time my design could work, and I started to buy components and print pieces.',
+                  'This process took nearly five weeks and as I wanted to have a good-looking robot, I also had to sand and paint pieces. Since there are nearly 70 pieces, it added a lot of work but it was worth it!',
+                  '<img src="images/projects/bob v3/painting.jpg" class="img-fluid">',
+                  '<img src="images/projects/bob v3/pieces.jpg" class="img-fluid">',
+                  'Once the robot was assembled, I could already feel that it was much stronger than Bob v2 which had some weak spots.',
+                  'The only thing left was to build the circuit for the microcontroller and to program it. Again, I used an Arduino.',
+                  '<img src="images/projects/bob v3/circuit.jpg" class="img-fluid">',
+                  'It was finally time to code how the robot could move. After months of designing and building, I thought that the end of the journey was close.',
+                  'This was without taking into account a faulty battery that short-circuited the entire system upon recharging, burning many parts. After this incident, I had to take a break from the project, exhausted and without a clue on how to repair Bob.',
+                  'A few weeks later, I decided that I wanted to finish this project so I started to look for the source of the short-circuit. After days of measuring conductivity, trying to control individually each motor, and swapping components, I was able to identify the battery as the source of the problem and the components it had burnt. I bought a new battery and Bob was up and working again :',
+                  '<img src="images/projects/bob v3/back.jpg" class="img-fluid">',
+                  'During the next few months, I added different functionalities.',
+                  'I first started with different modes that the person controlling Bob could choose. Below, you can see first Bob in his high-speed mode with a body really low and legs moving super fast. Then, the second picture shows Bob in his climbing mode, going super slow with legs lifting up to nearly 12 cm.',
+                  '<img src="images/projects/bob v3/gait1.jpg" class="img-fluid">',
+                  '<img src="images/projects/bob v3/gait2.jpg" class="img-fluid">',
+                  'Finally, I added a mode to control the movement of the body in every single degree of freedom possible. This was to showcase what Bob v3 was capable of.',
+                  '<img src="images/projects/bob v3/movement.jpg" class="img-fluid">',
+                  'And to be sure that I could transport it without damaging it, I built Bob a suitcase.',
+                  '<img src="images/projects/bob v3/rangement.jpg" class="img-fluid">',
+                ],
               },
+              {
+                id: 4,
+                title: 'Hexapod - Bob v2',
+                description: 'After building Bob v1, I fell in love with walking robots. However it had many flaws, so I made Bob v2.',
+                image: 'images/projects/bob v2/solidworks.JPG',
+                descriptionlist: [
+                  'Bob v1 had many problems, mainly stability issues. As it had only four legs, it was only possible to move one leg at a time to keep a good balance. With the addition of a small weight, it was even needed to shift the body to ensure that the center of gravity stayed between the points of support. This was not good enough for me, so I decided to build a new Bob, this time featuring six legs.',
+                  'For this second version, I was able to reuse the simulations programmed for Bob v1, therefore most of the work was designing and building the robot.',
+                  '<img src="images/projects/bob v2/solidworks.JPG" class="img-fluid">',
+                  'In addition to the fact that Bob v2 had six legs, I wanted to add more features to have more stability and adaptation to the terrain.',
+                  'To do so, I designed a force sensor in the last phalange of each leg. I wanted to be able to detect precisely when a leg hit the ground. With precise force measurement, it would even be possible to determine if the leg of the robot is well distributed and if not how to shift the body to correct that.',                 
+                  'However, as I had to use cheap pressure sensors, I often got values even when no pressure was being applied due to the leg movement. Therefore, I created a mechanism that separated the end of the leg and the sensor if the pressure was too weak, thanks to springs separating the two.',                
+                  'Below, you\'ll find two pictures of the mechanism with a contact and then without :',
+                  '<img src="images/projects/bob v2/phal3_fermee.png" class="img-fluid">',
+                  '<img src="images/projects/bob v2/phal3_ouverte.png" class="img-fluid">',
+                  'After many successful experiments, I decided to start the building process.',
+                  'I bought my own 3D printer and this was my first experience printing hundreds of pieces. I first started by building a prototype leg :',
+                  '<img src="images/projects/bob v2/leg_combined.JPG" class="img-fluid">',
+                  'The lag mechanically worked very well, so I decided to start to print every single piece for the robot. At the same time, I learned to design my own PCBs and getting them manufactured. After a lot of welding, I ended up with a working PCB handling the control of 18 motors, reading signals from 18 position sensors and 6 force sensors, controlling nearly 80 RGB LEDs, transforming high current-voltage (up to 10A), and communication via WiFi and Bluetooth.',
+                  '<img src="images/projects/bob v2/circuit.jpg" class="img-fluid">',
+                  'Unfortunately, after printing and assembling the robot, I discovered many show-stopping problems.',
+                  'First, one major problem was the motors I used. As I needed 18 motors and had no financial support, I chose some really cheap motors from China that did not work reliably and didn\'t respect the specifications given by the vendor.',
+                  'Secondly, as it was one of my first experiences with 3D printing, I had made some bad design choices that lead to weak pieces because of hard shapes to print.',
+                  'Lastly, I had tried to integrate too many features into one robot. As an example, a major part of the circuit was to control the RGB lights on each phalange which were only there to look good.',
+                  'Even though, Bob v2 never did more than crawling with few legs I learned a lot through this project. I knew that I had to do more tests before rushing into building the entire thing. I also needed to learn how to design simpler pieces to make the 3D printing process easier and also to redefine the "real" requirements of the robot to avoid unnecessary complications.',                 
+                  'I was more than ever motivated to start a new robot to use the knowledge I had acquired and that is why I started building Bob v3.'
+                ],
+              }
             ],
           }
           ],
@@ -157,7 +189,7 @@ new Vue(
 
               educationitems: [
                 {
-                  id: 7,
+                  id: 0,
                   title: 'Stanford',
                   subtitle: 'M.S in Computer Science',
                   description: 'Artificial intelligence Track<br/><b>GPA: 4.05</b>',
@@ -167,7 +199,7 @@ new Vue(
                   location: 'Stanford, CA',
                 },
                 {
-                  id: 8,
+                  id: 1,
                   title: 'Ecole Polytechnique',
                   subtitle: 'Engineering diploma<br/>(M.S + B.S. equivalent)',
                   description: 'Image, Vision and Machine Learning<br/><b>GPA: 3.93</b>',
@@ -177,7 +209,7 @@ new Vue(
                   location: 'Palaiseau, Franche',
                 },
                 {
-                  id: 9,
+                  id: 2,
                   title: 'Lycée Jean-Baptiste Say',
                   subtitle: 'PTSI/PT* (French CPGE)',
                   description: '2 years of intensive preparation for the French engineering school entrance exams (undergraduate level).<br/><b>GPA: 4.00</b>',
