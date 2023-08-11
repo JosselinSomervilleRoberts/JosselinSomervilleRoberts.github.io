@@ -270,6 +270,16 @@ new Vue(
               title: 'Auto Speech Bubbles',
               description: 'Places speech bubble for TV-shows without obstructing the face of the characters.',
               image: 'images/projects/speech_bubbles/display.png',
+              descriptionlist: [
+                'Using off-the-shelve mouth detection and facial recognition, I created an automatic speech bubble video player with a custom bubble placing algorithm.',
+                '<img src="images/projects/speech_bubbles/framerate.png" class="img-fluid">',
+                'The goal was to not-only place automatically speech bubblue with a tail attached to the speaker\'s mouth but also in a position thta looks good and does not obstruct any important part of the frame.',
+                'To do this, I created a placement optimizer that takes into account the speaker\'s mouth position, some obstacles (for examples other characters that ideally should not be hidden by the bubble) and some heuristics on the preferred bubble position (usually a well-laced bubble is slightly above the mouth of the speaker but to the side and not directly above its head).',
+                'This score is computed for all pixels and then a rectangle of the desired size (based on the subtitles\' length) that maximizes the sum of the socre ot its pixels is computed. Here is an illustration of the scores:',
+                '<img src="images/projects/speech_bubbles/scores3.JPG" class="img-fluid">',
+                'Using some multiprocessing rendering, I was able to make this video player run at 30 fps (24 on the image above as this is the original framerate) to compensate for the very different rendering times of each frame (detecting a character is slow as well as optimizing the bubble position). Below is a graph showing the rendering time of each frame and why multiprocessing is required:',
+                '<img src="images/projects/speech_bubbles/runtime.png" class="img-fluid">'
+              ],
               repo: 'SpeechBubbleSubtitles',
               pdf: 'papers/Report_INF573.pdf',
               pdf_text: 'Find the final report'
