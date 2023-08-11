@@ -175,7 +175,7 @@ new Vue(
           name: 'Machine Learning',
           items: [
             {
-              id: 101,
+              id: 102,
               title: 'NASA Reachbot cracks segmentor',
               description: 'A computer vision project to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold. Paper in review for WACV 2023.',
               image: 'images/projects/reachbot/display.png',
@@ -192,6 +192,19 @@ new Vue(
                 'Not-only our model outperformed the humans, we also showed that our loss was performing better that any other common loss.'
               ],
               repo: 'Reachbot-Predictor'
+            },
+            {
+              id: 101,
+              title: 'New Multi-task RL method',
+              description: 'Using some new low-rank task-specific layers, I outperformed SOTA on Metaworld.',
+              image: 'images/projects/ptsl/display.png',
+              descriptionlist: [
+                'In this project, I created a new architecture that combines both one general dense multitask trunk with some low-rank task-specific layers.',
+                'TODO IMAGE OF ARCHITECTURE',
+                'Under the same number of parameters, I was able to outperform the State-of-the-art on the MT-10 tasks of Metaworld.',
+                'TODO IMAGE GRAPH OUTPERFORMING'
+              ],
+              repo: 'mtrl'
             },
             {
               id: 8,
