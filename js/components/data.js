@@ -26,6 +26,14 @@ new Vue(
               title: 'Chemist robot arm',
               description: 'I built a robot arm to pickup and pour beakers into other beakers.',
               image: 'images/projects/robot arm/display.png',
+              descriptionlist: [
+                'In only 2 weeks, as a team of 4, we designed and built from scratch a 5-axis robot arm to pick, move an rotate beackers in order to make chemical reactions.',
+                'As a constrained we had to incorporate in our design: a Stepper, BLDC, DC and Servo motor as well as a cable, gear and belt transmission.',
+                'TODO IMAGE ROBOT',
+                'TODO IMAGE SOLIDWORKS',
+                'You can see the robot in action here making a small elephant toothpaste:',
+                'TODO VIDEO.'
+              ]
             },
             {
               id: 1,
