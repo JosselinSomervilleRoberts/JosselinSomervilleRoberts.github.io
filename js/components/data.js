@@ -335,6 +335,16 @@ new Vue(
               title: 'Fast Ocean waves',
               description: 'Using noise superposition computed on the GPU to render realistic ocean waves.',
               image: 'images/projects/ocean_waves/final_result.PNG',
+              decriptionlist: [
+                'The objective of this project was to create a real-time fast wave simulation to display high-quality images. This included wave generation, foam rendering, buoyancy estimation, various rendering featues (Layered BRDF, reflections, textures, ...) while giving a lot of control to the user: wind speed, seafoam parameters, object weight, ...',
+                'Most of this was done in shaders to be able to render a 500x500 sea mesh with an animated floating ship made of 250k vertices at 120FPS. Hese is what the final result looks like:',
+                '<img src="images/projects/ocean_waves/final_result.PNG" class="img-fluid">',
+                '<img src="images/projects/ocean_waves/screen5.PNG" class="img-fluid">',
+                'The waves are generated with a superpostion of wave trains and some 3D Perlin noise (all on the GPU). The seafoam is computed using a combination of the normal direction, height of the sea and gradient of the normal.',
+                'Objects (like the ship) are also simulated by creating a simplified floating mesh that is used to compute the position of the complex rendered mesh. Each triangle is positioned on top of the wated which we can then use to compute the average translation and rotation of the object (as we are simulating solid objects). This gives a very satisfying tilting movement:',
+                '<img src="images/projects/ocean_waves/screen7.PNG" class="img-fluid">', ,
+                '<img src="images/projects/ocean_waves/screen8.PNG" class="img-fluid">',
+              ],
               repo: 'ProjectOcean',
               pdf: 'papers/Report_INF585.pdf',
               pdf_text: 'Find the final report'
