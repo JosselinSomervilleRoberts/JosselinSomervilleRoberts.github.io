@@ -1,42 +1,50 @@
 Vue.component(
-    'portfolio-item',
-    {
-        props: {
-            githubusername: {
-              type: String,
-              required: false
-            },
-            id: {
-              type: Number,
-              required: true
-            },
-            title: {
-              type: String,
-              required: true
-            },
-            description: {
-              type: String,
-              required: true
-            },
-            image: {
-              type: String,
-              required: true
-            },
-            repo: {
-              type: String,
-              required: false
-            },
-            descriptionhtml: {
-              // type: String,
-              required: false
-            },
-            descriptionlist: {
-              // type: Array,
-              required: false
-            },
-          },
-        template:
-            `<div  class="col-lg-4">
+  'portfolio-item',
+  {
+    props: {
+      githubusername: {
+        type: String,
+        required: false
+      },
+      id: {
+        type: Number,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      },
+      description: {
+        type: String,
+        required: true
+      },
+      image: {
+        type: String,
+        required: true
+      },
+      repo: {
+        type: String,
+        required: false
+      },
+      descriptionhtml: {
+        // type: String,
+        required: false
+      },
+      descriptionlist: {
+        // type: Array,
+        required: false
+      },
+      pdf: {
+        // type: String,
+        required: false
+      },
+      pdf_text: {
+        // type: String,
+        required: false
+      },
+    },
+    template:
+      `<div  class="col-lg-4">
             
               <!-- Modal -->
               <div class="portfolio-modal modal fade" :id="'portfolioModal' + id" tabindex="-1" role="dialog" aria-hidden="true">
@@ -62,6 +70,9 @@ Vue.component(
                               <a :href="'https://github.com/' + githubusername + '/' + repo" target="blank">https://github.com/{{githubusername}}/{{repo}}</a>
                               <iframe class="mt-2" :src="'http://lab.lepture.com/github-cards/card.html?user=' + githubusername + '&amp;repo=' + repo" frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180" allowtransparency="true"></iframe><br>
                             </div>
+                            <div cv-if="pdf && pdf_text">
+                              <p class="lead portfolio-item-paragraph">{{pdf_text}}: <a href="{{pdf}}">here</a></p>
+                            </div>
                             <a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
                               <i class="fa fa-times"></i> Close Project</a>
                           </div>
@@ -86,5 +97,5 @@ Vue.component(
               </div>
             
             </div>`
-    },
+  },
 );

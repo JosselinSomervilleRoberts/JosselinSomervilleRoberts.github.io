@@ -169,6 +169,7 @@ new Vue(
                 '<img src="images/projects/klannbot/top.jpg" class="img-fluid">',
                 '<img src="images/projects/klannbot/front.jpg" class="img-fluid">',
               ],
+              // TODO: FInd the report
             },
             {
               id: 6,
@@ -199,7 +200,9 @@ new Vue(
                 'We trained various VIT-based model and introduced a new loss: SKIL (Skeleton Intersection Loss) based on a smooth skeletonization (backpropageble) algorithm introduced by the CL-DIce paper.',
                 'Not-only our model outperformed the humans, we also showed that our loss was performing better that any other common loss.'
               ],
-              repo: 'Reachbot-Predictor'
+              repo: 'Reachbot-Predictor',
+              pdf: 'papers/Reachbot.pdf', // TODO
+              pdf_text: 'Find the preprint of the paper'
             },
             {
               id: 101,
@@ -212,14 +215,18 @@ new Vue(
                 'Under the same number of parameters, I was able to outperform the State-of-the-art on the MT-10 tasks of Metaworld.',
                 'TODO IMAGE GRAPH OUTPERFORMING'
               ],
-              repo: 'mtrl'
+              repo: 'mtrl',
+              pdf: 'papers/ptsk.pdf', // TODO
+              pdf_text: 'Find the preprint of the paper'
             },
             {
               id: 8,
               title: 'Multi-task NLP',
               description: 'Using a single BERT model to perform multiple NLP tasks.',
               image: 'images/projects/multi_task_nlp/display.jpg',
-              repo: 'CS224N-Project-BERT-MultiTask'
+              repo: 'CS224N-Project-BERT-MultiTask',
+              pdf: 'papers/Report_CS224N.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 9,
@@ -247,7 +254,9 @@ new Vue(
               title: 'RL agents for Ultimate Tic Tac Toe',
               description: 'Using various Reinforcement Learning algorithms to train an AI to play Ultimate Tic Tac Toe.',
               image: 'images/projects/ultimate_tic_tac_toe/ultimate tic tac toe.png',
-              repo: 'UltimateTicTacToe-RL'
+              repo: 'UltimateTicTacToe-RL',
+              pdf: 'papers/Report_INF581.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 13,
@@ -261,13 +270,16 @@ new Vue(
               title: 'Auto Speech Bubbles',
               description: 'Places speech bubble for TV-shows without obstructing the face of the characters.',
               image: 'images/projects/speech_bubbles/display.png',
-              repo: 'SpeechBubbleSubtitles'
+              repo: 'SpeechBubbleSubtitles',
+              pdf: 'papers/Report_INF573.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 15,
               title: 'Airbus Ship Detection',
               description: 'Using a Convolutional Neural Network to detect ships in satellite images.',
               image: 'images/projects/airbus detection/Predicted_4.png',
+              // TODO: Find report
             },
             {
               id: 16,
@@ -275,6 +287,7 @@ new Vue(
               description: 'Determining paths for robots moving on the same map.',
               image: 'images/projects/cgshop/display.jpg',
               repo: 'robotsCGShop2021'
+              // TODO: Find report
             }
           ],
         },
@@ -288,7 +301,9 @@ new Vue(
               title: 'Fast Ocean waves',
               description: 'Using noise superposition computed on the GPU to render realistic ocean waves.',
               image: 'images/projects/ocean_waves/final_result.PNG',
-              repo: 'ProjectOcean'
+              repo: 'ProjectOcean',
+              pdf: 'papers/Report_INF585.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 18,
@@ -296,12 +311,15 @@ new Vue(
               description: 'Implemented a renderer with Screen Space Reflections and Ray Tracing.',
               image: 'images/projects/ssr/final_ssr.PNG',
               repo: 'MyOpenGlRenderer',
+              pdf: 'papers/Report_INF584.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 19,
               title: 'Echo\'s Adventure',
               description: 'An interactive world coded from scratch in C++ using OpenGL.',
               image: 'images/projects/echos adventure/echos_adventure.JPG',
+              // TODO: Find report
             },
             {
               id: 20,
@@ -334,12 +352,15 @@ new Vue(
               title: 'Mechanical Analysis of 3D printed infills',
               description: 'Using Finite Element Analysis to determine the best infill pattern for 3D printed parts.',
               image: 'images/projects/3d_printing/display.jpg',
+              pdf: 'papers/Report_MEC552B.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 24,
               title: 'Procedural dialog generation',
               description: 'As a team of 5 students, we realized a research project during a year to procedurally generate dialogs between two Non-Play Characters (NPC).',
               image: 'images/projects/psc/graphe.png',
+              // TODO: Find the report
             },
           ],
         },
