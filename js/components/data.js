@@ -254,6 +254,18 @@ new Vue(
               title: 'RL agents for Ultimate Tic Tac Toe',
               description: 'Using various Reinforcement Learning algorithms to train an AI to play Ultimate Tic Tac Toe.',
               image: 'images/projects/ultimate_tic_tac_toe/ultimate tic tac toe.png',
+              descriptionlist: [
+                'In this project, I designed and studied various algorithms to design an agent that plays Ultimate Tic Tac Toe.',
+                'Don\'t be fooled by the name, Ultimate Tic Tac Toe is a very complex game with no known optimal algorithm as it has an extremly large number of moves possible.',
+                'The game consist of a 3x3 tic tac toe grid where each cell is a smaller 3x3 tic tac toe grid (see image below). The goal is to make a line using the large cell. To win a large cell, you have to win its associated small tic tac toe grid.',
+                '<img src="images/projects/ultimate_tic_tac_toe/ultimate tic tac toe.png" class="img-fluid">',
+                'So far this sounds easy, just 9 tic tac toe games in one. Well here comes the twist. In a given small grid, the position where you play determines in which grid you opponent will play his next move.',
+                'Here is an example, you play in the middle cell, and in this cell you place a cross in the top left corner. Therefore, your opponent next move will be constrained to the top left grid. This is what makes the gane interesting as sending your opponent to a bad grid can often be better than wining your current grid.',
+                'This problem is very complex as the number of states is enormous (in the order of magnitude of 3^81 * 3^9 * 9 - corresponding to the state of each small cell, large cell and where the player can play), the action space depends on the state (most of the time the player can only play in a given grid) and the horizon is quite far (a game usually lasts about 50 steps)',
+                'All of this makes Ultimate Tic Tac Toe a very complex problem for Reinforcement Learning algorithms. I experimented with 3 approaches coded from scratch: minimax, MCTS (Monte-Carlo Tree Search) with pruning and DQN (Deep Q-learning).',
+                'Then I made various verisons of these algorithms confront themselves (and a random agent) (see results below). I also challenged 20 people to beat the best agent and the agent won 17 out of these 20 games.',
+                '<img src="images/projects/ultimate_tic_tac_toe/results_column.png" class="img-fluid">'
+              ],
               repo: 'UltimateTicTacToe-RL',
               pdf: 'papers/Report_INF581.pdf',
               pdf_text: 'Find the final report'
