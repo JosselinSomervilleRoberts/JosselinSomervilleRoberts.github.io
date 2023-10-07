@@ -170,13 +170,20 @@ new Vue(
                 '<img src="images/projects/klannbot/top.jpg" class="img-fluid">',
                 '<img src="images/projects/klannbot/front.jpg" class="img-fluid">',
               ],
-              // TODO: FInd the report
+              // TODO: Find the report
             },
             {
               id: 6,
               title: 'PCB 2D Plotter',
               description: 'This project aimed to build a 2D plotter to draw PCBs.',
               image: 'images/projects/the drawer/pcb.png',
+              descriptionlist: [
+                'During my last year of high school, I wanted to build a 2D plotter to draw PCBs.',
+                'I built from scratch the entire robot, from the design to the code.',
+                'Using a special pen, I was able to draw on a copper plate and then use an acid to remove the copper where the pen had not drawn.',
+                'I also wrote an edge extractor to draw images on paper from regular images.',
+                'This project got the maximum grade of 20/20 for the oral exam of Engineering Science of the French Baccalaureate.',
+              ]
             }
           ],
         },
