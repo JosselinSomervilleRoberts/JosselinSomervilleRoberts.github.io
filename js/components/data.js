@@ -201,7 +201,7 @@ new Vue(
                 'Not-only our model outperformed the humans, we also showed that our loss was performing better that any other common loss.'
               ],
               repo: 'Reachbot-Predictor',
-              pdf: 'papers/Reachbot.pdf', // TODO
+              pdf: '../../papers/Reachbot.pdf',
               pdf_text: 'Find the preprint of the paper'
             },
             {
