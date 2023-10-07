@@ -415,16 +415,6 @@ new Vue(
 
       jobitems: [
         {
-          id: 0,
-          title: 'Youtube',
-          subtitle: 'Machine Learning Intern',
-          description: 'I will be working in the Content ID team to work on state-of-the-art Computer Vision algorithms in order to detect copyright infringements.',
-          image: 'images/youtube.jpg',
-          dates: '(Future) September 2023 - December 2023',
-          link: 'https://www.youtube.com/watch?v=9g2U12SsRns',
-          location: 'Zurich, Switzerland',
-        },
-        {
           id: 1,
           title: 'Nvidia',
           subtitle: 'Machine Leaning Intern',
