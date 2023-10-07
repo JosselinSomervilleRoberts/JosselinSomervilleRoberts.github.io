@@ -1,4 +1,4 @@
-Vue.component (
+Vue.component(
     'timeline-item',
     {
         props: {

@@ -6,6 +6,7 @@ new Vue(
       title: 'M.S. Student in CS @ Stanford (2024), Ecole Polytechnique (X19), ex Google and NVIDIA Intern, Nation-wide CPGE (PT) Valedictorian (2019)',
       image: 'images/josselin.jpg',
       linkedinusername: 'josselin-somerville-roberts',
+      googlescholar: 'https://scholar.google.com/citations?user=eLfRuNAAAAAJ&hl=fr&oi=ao',
       email: 'josselin at stanford dot edu',
       stanfordprofile: 'https://profiles.stanford.edu/josselin-somerville-roberts',
       githubusername: 'JosselinSomervilleRoberts',

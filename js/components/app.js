@@ -6,13 +6,17 @@ Vue.component(
                 type: String,
                 required: true,
             },
-            image : {
+            image: {
                 type: String,
                 required: true,
             },
             linkedinusername: {
                 type: String,
                 required: true,
+            },
+            googlescholar: {
+                type: String,
+                required: false,
             },
             stanfordprofile: {
                 type: String,
@@ -54,6 +58,7 @@ Vue.component(
                     :name="name"
                     :image="image"
                     :linkedinusername="linkedinusername"
+                    :googlescholar="googlescholar"
                     :stanfordprofile="stanfordprofile"
                     :email="email"
                     :title="title"

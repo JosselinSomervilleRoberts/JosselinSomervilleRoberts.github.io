@@ -32,6 +32,8 @@ Vue.component(
                         :githubusername="githubusername"
                         :descriptionhtml="item.descriptionhtml"
                         :descriptionlist="item.descriptionlist"
+                        :pdf="item.pdf"
+                        :pdf_text="item.pdf_text"
                         ></portfolio-item>
                     </div>
                 </div>`,

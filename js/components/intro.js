@@ -1,42 +1,46 @@
 Vue.component(
-    'intro',
-    {
-        props: {
-            name: {
-                type: String,
-                required: true,
-            },
-            image: {
-                type: String,
-                required: true,
-            },
-            githubusername: {
-                type: String,
-                required: true,
-            },
-            linkedinusername: {
-                type: String,
-                required: true,
-            },
-            stanfordprofile: {
-                type: String,
-                required: false,
-            },
-            email: {
-                type: String,
-                required: true,
-            },
-            title: {
-                type: String,
-                required: true,
-            },
-            items: {
-                type: Array,
-                required: true,
-            }
-        },
-        template:
-            `<section id="about" class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem;">
+  'intro',
+  {
+    props: {
+      name: {
+        type: String,
+        required: true,
+      },
+      image: {
+        type: String,
+        required: true,
+      },
+      githubusername: {
+        type: String,
+        required: true,
+      },
+      linkedinusername: {
+        type: String,
+        required: true,
+      },
+      googlescholar: {
+        type: String,
+        required: false,
+      },
+      stanfordprofile: {
+        type: String,
+        required: false,
+      },
+      email: {
+        type: String,
+        required: true,
+      },
+      title: {
+        type: String,
+        required: true,
+      },
+      items: {
+        type: Array,
+        required: true,
+      }
+    },
+    template:
+      `<section id="about" class="content-section" style="background:#edeeef; padding-top: 9rem; padding-bottom: 0rem;">
             <div class="container">
               <div class="row">
                 <div class="col-sm-12 col-lg-4">
@@ -53,6 +57,9 @@ Vue.component(
                         </li>
                         <li class="text-center">
                           <a :href="stanfordprofile"><i class="fa fa-tree"></i></a>
+                        </li>
+                        <li class="text-center">
+                          <a :href="googlescholar"><i class="fa fa-google"></i></a>
                         </li>
                       </ul>
                     </div>
@@ -81,5 +88,5 @@ Vue.component(
             </div>
             
           </section>`,
-    },
+  },
 );
