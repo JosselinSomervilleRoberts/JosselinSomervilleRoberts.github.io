@@ -186,38 +186,40 @@ new Vue(
             {
               id: 102,
               title: 'NASA Reachbot cracks segmentor',
-              description: 'A computer vision project to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold. Paper in review for WACV 2023.',
-              image: 'images/projects/reachbot/display.png',
+              description: 'A computer vision project to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold. Paper in review for IEEE IRC 2023.',
+              image: 'images/projects/reachbot/crack.png',
               descriptionlist: [
-                'In this project we trained several VIT-based model to segment cracks and edges.',
+                'In this paper we trained several VIT-based model to segment cracks and edges.',
+                'This project was don in collaboration with the <a href="http://bdml.stanford.edu/" >Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University. The goal was to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold.',
+                '<img src="images/projects/reachbot/reachbot_diagram.png" class="img-fluid">',
                 'The first step was to gather some data as no such data was puclicly available. We gathered 100 images from places like Pinnackles National Park, Monument Valley and the Grand Canyon. In addition, we generated 150 images with DALL-E 2 to increase the diversity',
-                'TODO IMAGE DATASET',
+                '<img src="images/projects/reachbot/dataset.png" class="img-fluid">',
                 'We manually labeled this data to form a training dataset (150 generated images and 50 real images) and a validation dataset (50 real images).',
-                'TODO IMAGE LABELED',
+                '<img src="images/projects/reachbot/dataset_annotated.png" class="img-fluid">',
                 'To have an idea of how sujective this task is we evaluated some humas on the validation dataset who only scored 35% on the DICE metric.',
-                'This also showed the fact that classical COmputer Vision metric were not appropriate in our case. In fact the width of a crack is often very subjective however we are intersted in the correct positioning of the crack. Both play a role as important in the DICE metric. This is why we introduced 3 new metrics: skeleton-distance, skeletion-width, skeleton-length, all base on a skeletonization of the crack.',
-                'TODO IMAGE SKELETON',
-                'We trained various VIT-based model and introduced a new loss: SKIL (Skeleton Intersection Loss) based on a smooth skeletonization (backpropageble) algorithm introduced by the CL-DIce paper.',
-                'Not-only our model outperformed the humans, we also showed that our loss was performing better that any other common loss.'
+                'This also showed the fact that classical Computer Vision metric were not appropriate in our case. In fact the width of a crack is often very subjective however we are interested in the correct positioning of the crack. Both play a role as important in the DICE metric. This is why we introduced 3 new metrics: LineAcc-position, LineAcc-width, LineAcc-length, all based on a skeletonization of the crack.',
+                'We trained various VIT-based model and introduced a new loss: SKIL (Skeleton Intersection Loss) based on a smooth skeletonization (backpropageable) algorithm introduced by the CL-Dice paper.',
+                'Not-only our model outperformed the humans, we also showed that our loss was performing better that any other common loss.',
+                'In addition we showed that our loss was usefull to others tasks by showing that it ourperforms classic losses on blood vessel segmentation.',
               ],
               repo: 'Reachbot-Predictor',
-              pdf: '../../papers/Reachbot.pdf',
-              pdf_text: 'Find the preprint of the paper'
+              pdf: 'https://arxiv.org/abs/2309.05139',
+              pdf_text: 'Find the preprint of the paper for more details'
             },
             {
               id: 101,
               title: 'New Multi-task RL method',
-              description: 'Using some new low-rank task-specific layers, I outperformed SOTA on Metaworld.',
-              image: 'images/projects/ptsl/display.png',
+              description: 'Using some new low-rank task-specific layers, I outperformed SOTA on Metaworld. Paper in review for IEEE ICRA 2024.',
+              image: 'images/projects/ptsl/PTSL.png',
               descriptionlist: [
                 'In this project, I created a new architecture that combines both one general dense multitask trunk with some low-rank task-specific layers.',
-                'TODO IMAGE OF ARCHITECTURE',
-                'Under the same number of parameters, I was able to outperform the State-of-the-art on the MT-10 tasks of Metaworld.',
-                'TODO IMAGE GRAPH OUTPERFORMING'
+                '<img src="images/projects/ptsl/PTSL.png" class="img-fluid">',
+                'Under the same number of parameters, I was able to outperform the State-of-the-art on the MT-10 and MT-50 tasks of Metaworld.',
+                '<img src="images/projects/ptsl/graph.png" class="img-fluid">'
               ],
               repo: 'mtrl',
-              pdf: 'papers/ptsk.pdf', // TODO
-              pdf_text: 'Find the preprint of the paper'
+              pdf: 'https://arxiv.org/abs/2309.08776',
+              pdf_text: 'Find the preprint of the paper for more details'
             },
             {
               id: 8,
