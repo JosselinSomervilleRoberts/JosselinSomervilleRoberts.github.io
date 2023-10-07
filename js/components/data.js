@@ -30,10 +30,10 @@ new Vue(
               descriptionlist: [
                 'In only 2 weeks, as a team of 4, we designed and built from scratch a 5-axis robot arm to pick, move an rotate beackers in order to make chemical reactions.',
                 'As a constrained we had to incorporate in our design: a Stepper, BLDC, DC and Servo motor as well as a cable, gear and belt transmission.',
-                'TODO IMAGE ROBOT',
-                'TODO IMAGE SOLIDWORKS',
+                '<img src="images/projects/robot arm/display.png" class="img-fluid">',
+                // 'TODO IMAGE SOLIDWORKS',
                 'You can see the robot in action here making a small elephant toothpaste:',
-                'TODO VIDEO.'
+                '<iframe style="margin-right: 1%; margin-left: 1%; height: auto;" width="98%" src="https://www.youtube.com/embed/k4rK5P6R8PI" frameborder="0"></iframe>'
               ]
             },
             {
@@ -144,7 +144,7 @@ new Vue(
                 'During my first year of undergraduate studies, I started working on walking robots.',
                 'These were the first "real" robots I built and I wanted to compare two different approaches: many degrees of freedom mechanisms versus gait generation mechanisms (such as the Klann mechanism).',
                 '<b>Quadruped robot - Bob v1</b>',
-                'As this was my first robot, I did not design it. (you can find the files here: https://www.thingiverse.com/thing:1009659)',
+                'As this was my first robot, I did not design it. (you can find the files to 3D print it here: https://www.thingiverse.com/thing:1009659)',
                 'However, I build it on my own and decided to create my own circuit and Arduino program for it (similar to C++ code).',
                 '<img src="images/projects/bob v1/side.jpg" class="img-fluid">',
                 'Even before beginning to build the robot, I coded some simulations in Python to compute various metrics such as the torque in each joint, the energy used, the robot speed, and even the maximal charge carryable.',
