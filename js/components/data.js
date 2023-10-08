@@ -235,6 +235,12 @@ new Vue(
               description: 'Using a single BERT model to perform multiple NLP tasks.',
               image: 'images/projects/multi_task_nlp/display.jpg',
               repo: 'CS224N-Project-BERT-MultiTask',
+              descriptionlist: [
+                'In this project, we studied the possibility of using a single BERT model to perform multiple NLP tasks.',
+                'The challenge was to perform 3 tasks with a single BERT backbone: Paraphrrase detection (binary classification), Sentiment analysis (multi-class classification) and Semantic textual similarity (regression).',
+                'We implemented various multi-task papers such as PCGrad, Gradient Vaccine, SMART, PAL (Projected Attention Layer) and various scheduling methods.',
+                'We even introduced a variant: Gradient compromise to have both gradient surgery methods such as PCGrad and Gradient Vaccine with a scheduling with are normally incompatible.'
+              ],
               pdf: 'papers/Report_CS224N.pdf',
               pdf_text: 'Find the final report'
             },
