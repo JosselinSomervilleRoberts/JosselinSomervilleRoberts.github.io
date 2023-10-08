@@ -434,6 +434,17 @@ new Vue(
               title: 'Screen Space Reflections',
               description: 'Implemented a renderer with Screen Space Reflections and Ray Tracing.',
               image: 'images/projects/ssr/final_ssr.PNG',
+              descriptionlist: [
+                'This project was the final project of a rendering class. Throughout the semester, we implemented from scratch a renderer supporting both Ray Tracing and Rasterization. We implemented many features such as Texture Mapping, BRDFs, and more. The final project consisted of adding a new feature to the renderer. I decided to implement Screen Space Reflections.', ,
+                'Screen Space Reflections is a very fast approximation of reflections. It consists of using the depth buffer to find the closest object to the camera and then use the normal of this object to compute the reflected ray. This ray is then used to find the color of the reflected object. This is a very fast approximation as it does not require to compute any ray-object intersection (while I am talking about rays, this is not Ray Tracing but a second Rasterization pass). See below an image without and with SSR:',
+                '<img src="images/projects/ssr/final_no_ssr.PNG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/ssr/final_ssr.PNG" class="mx-auto d-block img-fluid">', ,
+                'Implementing SSR is not trivial and requires many steps including: setting up a several-pass rendering pipeline, computing the reflected ray, properly shading the reflected pixel (Simply assigning the shaded fragment hit does not yield realistic results), refining the search with a binary search, reducing the noise and more.',
+                'While I spent most time implementing all these features to improve the quality of the final image, I also analyzed scenarios in which SSR might not yield good results. You can find a few examples below (and a more detailed analysis in the report):',
+                '<img src="images/projects/ssr/not_enough_steps.PNG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/ssr/too_thick.PNG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/ssr/hidden.PNG" class="mx-auto d-block img-fluid">',
+              ],
               repo: 'SSR-Renderer',
               pdf: 'papers/Report_INF584.pdf',
               pdf_text: 'Find the final report'
