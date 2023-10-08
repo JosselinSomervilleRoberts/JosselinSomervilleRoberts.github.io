@@ -180,6 +180,7 @@ new Vue(
               descriptionlist: [
                 'During my last year of high school, I wanted to build a 2D plotter to draw PCBs.',
                 'I built from scratch the entire robot, from the design to the code.',
+                '<img src="images/projects/the drawer/pcb.png" class="mx-auto d-block img-fluid">',
                 'Using a special pen, I was able to draw on a copper plate and then use an acid to remove the copper where the pen had not drawn.',
                 'I also wrote an edge extractor to draw images on paper from regular images.',
                 'This project got the maximum grade of 20/20 for the oral exam of Engineering Science of the French Baccalaureate.',
@@ -254,6 +255,7 @@ new Vue(
                 'In this project, we created an agent that learns to clean a parking lot.',
                 'The goal of the agent is to autonomously clean a parking lot. This means that the agent had to not only learn how to drive but also cover the most surface in as little time as possible.',
                 'The first step was to create a Gym environment that would simulate the parking lot. This environment had to be fast enough to train the agent in a reasonable amount of time.',
+                '<img src="images/projects/rl_streets/display.png" class="mx-auto d-block img-fluid">',
                 'The second step was to create a Deep Reinforcement Learning agent. We experimented with various algorithms such as DQN, DDPG, PPO, and SAC. We also experimented with various reward functions.',
                 'In the end, we were able to train an agent that was able to clean a parking lot in a reasonable amount of time with SAC.',
                 'This involved quite a lot of observation and reward tuning to provide the agent with the right information to learn.',
