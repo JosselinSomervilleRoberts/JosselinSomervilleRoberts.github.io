@@ -372,8 +372,21 @@ new Vue(
               title: 'CG:Shop 2021: Coordinated Motion Planning',
               description: 'Determining paths for robots moving on the same map.',
               image: 'images/projects/cgshop/display.jpg',
-              repo: 'robotsCGShop2021'
-              // TODO: Find report
+              repo: 'robotsCGShop2021',
+              descriptionlist: [
+                'This project was an optimization competition to determine paths for robots moving on the same map.',
+                'On a grid, many robots (from 10 to 8000 depending on the problem) had to move from a starting position to a goal position. The goal was to find the paths for each robot such that the sum of the path lengths was minimized or the execution time was minimized (2 different problems). The maps were often quite dense (up to 60% occupancy by robots) and could contain obstacles (often on smaller maps). The figure below is an example of a map (green cells are robots, red cells are objectives and black cells are obstacles).',
+                '<img src="images/projects/cgshop/display.jpg" class="mx-auto d-block img-fluid">',
+                'Various algorithms were used to solve this problem. The first step was to implement A* to find the shortest path for each robot. Then, I implemented a priority queue to find the which robots had to arrive first as the goal postion of some robots often blocked the path of other robots. Then many optimization were implemented such as roolbacks, path compression and more.',
+                'At a given state, with a given priority, the movement of each robot was determined with a random walk inspired by flocks of fishes. Some force would incite the robot to go to its goal position, some other would incite the robot to avoid other robots and obstacles while some other would incite the robot to stay in the same direction as close robots.',
+                'Finally, some maps were so dense that even the priority queue could not solve in a decen amount of time the problem. The solution found was to first dispatch the robots outside of the map and then go back to the main algorithm with the random walk and priority queue. Two dispatching algorithms were implemented: the first one consisted of a deterministic algorithm that would dispatch the robots in a fractal pattern. This proved to be problematic as the robots would often be dispatched in the same direction and therefore would block each other. See the figure below:',
+                '<img src="images/projects/cgshop/dispatch_fractal.png" class="mx-auto d-block img-fluid">',
+                'The second algorithm used our existing random walk and priority queue algorithm to dispatch the robots. The dispatching simply consisted of assigning virtual goals positions outside of the maps to first dispatch the robots and then solve the problem with the main algorithm. This proved to be much more efficient as the robots were dispatched in a more random way and therefore would not block each other. See the figure below:',
+                '<img src="images/projects/cgshop/dispatch_random.png" class="mx-auto d-block img-fluid">',
+                'Overall this was a very fun project to work on as it was a very challenging problem and I learned a lot about optimization and path planning.',
+              ],
+              pdf: 'papers/Report_INF421.pdf',
+              pdf_text: 'Many cool optimization were implemented that could not be explained here. Find the final report (in French sadly) for more details'
             }
           ],
         },
