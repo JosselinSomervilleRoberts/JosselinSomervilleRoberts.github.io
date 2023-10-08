@@ -285,6 +285,15 @@ new Vue(
               title: 'Starcraft AI',
               description: 'Using Behaviour Trees to create an AI for Starcraft with BWAPI.',
               image: 'images/projects/starcraft/display.jpg',
+              descriptionlist: [
+                'In this project, I created an AI for Starcraft Brood War using Behaviour Trees.',
+                'The goal was to create an AI that could beat the built-in AI of the game. To do so, I used BWAPI (Brood War API) to communicate with the game and to get the state of the game.',
+                '<img src="images/projects/starcraft/display.jpg" class="mx-auto d-block img-fluid">',
+                'I then created a Behaviour Tree library from scratch to be able to create a Behaviour Tree for the AI.',
+                'The AI was decomposed in several managers that were using the Behaviour Tree to take decisions. The managers were: General manager, Army manager, and Economy manager.',
+                'The General manager was the main manager that was in charge of the global strategy of the AI as well as building. It was using the other managers to take actions and get data. The Army manager was in charge of the army and was using the Economy manager to get the resources needed to build units. The Economy manager was in charge of the economy and resources.',
+                'In the end, I was able to create an AI that was able to beat the built-in AI of the game and got 3rd when competing against AIs of other students of the class (I never played Starcraft before this project, so I was quite happy with this result).',
+              ],
               repo: 'StarcraftAI'
             },
             {
