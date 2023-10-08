@@ -485,7 +485,7 @@ new Vue(
           subtitle: 'Machine Leaning Intern',
           description: 'I will be working in the Computer Vision team for autonomous driving. My goal will be to add a new feature to the existing pipeline.',
           image: 'images/nvidia.png',
-          dates: '(Future) June 2023 - September 2023',
+          dates: 'June 2023 - September 2023',
           link: 'https://www.nvidia.com/en-us/self-driving-cars/',
           location: 'Santa Clara, CA',
         },
