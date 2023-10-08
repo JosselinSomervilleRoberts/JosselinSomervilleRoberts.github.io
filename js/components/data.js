@@ -355,7 +355,17 @@ new Vue(
               title: 'Airbus Ship Detection',
               description: 'Using a Convolutional Neural Network to detect ships in satellite images.',
               image: 'images/projects/airbus detection/Predicted_4.png',
-              // TODO: Find report
+              descriptionlist: [
+                'This project was a Kaggle competition to detect ships in satellite images, it was my first experience with Computer Vision.',
+                '<img src="images/projects/airbus detection/dataset.png" class="mx-auto d-block img-fluid">',
+                'The goal was to detect oriented bounding boxes around ships in satellite images.',
+                '<img src="images/projects/airbus detection/combined_0.png" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/airbus detection/combined_1.png" class="mx-auto d-block img-fluid">',
+                'I used FasterRCNN architercure to first detect axis-oriented bounding box. Then I used a post-processing algorithm to detect the oriented bounding boxes. This consisted of first using a watershed algorithm to separate the different ships and then regressing some lines to find the edges of the ships. Finally, I could propose a final oriented bounding box.',
+                'This model got very good performance for the detected ships (81% IOU) but was not able to detect all the ships (only 29% were detected). This was overall a very good first experience with Computer Vision.',
+              ],
+              pdf: 'papers/Report_INF473V.pdf',
+              pdf_text: 'Find the final report'
             },
             {
               id: 16,
