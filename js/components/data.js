@@ -428,8 +428,25 @@ new Vue(
               title: 'Echo\'s Adventures',
               description: 'An interactive world coded from scratch in C++ using OpenGL.',
               image: 'images/projects/echos adventure/echos_adventure.JPG',
+              descriptionlist: [
+                'This project was a procedurally generated open-world game coded from scratch in C++ using OpenGL for my first computer graphics class.',
+                '<img src="images/projects/echos adventure/echos_adventure.JPG" class="mx-auto d-block img-fluid">',
+                'The player controls Echo, a manually animated wolf that can walk, run and activate runes. The world is procedurally generated using various noises such as Perlin noise and uses many assets. It is decomposed in many biomes, see the figure below:',
+                '<img src="images/projects/echos adventure/echos1.JPG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/echos adventure/echos2.JPG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/echos adventure/echos3.JPG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/echos adventure/echos4.JPG" class="mx-auto d-block img-fluid">',
+                '<img src="images/projects/echos adventure/echos5.JPG" class="mx-auto d-block img-fluid">',
+                'Since this was a computer graphics class, I did not develop much of the gameplay. However, I did implement a simple constraint for the player. Echo has a limited vision and if he does not regularly activate runes, he will see less and less until he can only see outlines of the objects. See below for an example of Echo activating a rune:',
+                '<img src="images/projects/echos adventure/echos_rune.png" class="mx-auto d-block img-fluid">',
+                'This was mainly a made up reason for me to learn how to code and use custom shaders. This one was particularly hard to code as it required to detect edges of the rendered image. This was done with a two-pass algorithm. First, I rendered the scene in black and white and then I used a Sobel filter to detect edges. Finally, I used a threshold to only keep the edges that were strong enough. See the figure below:',
+                '<img src="images/projects/echos adventure/echos_adventure.JPG" class="mx-auto d-block img-fluid">',
+                'You can see a brief video of the game here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/AQMES8Xu4I0" frameborder="0"></iframe>',
+              ],
               repo: 'Echo-s-Adventures',
-              // TODO: Find report
+              pdf: 'papers/Report_INF443.pdf',
+              pdf_text: 'Find the final report (in French sadly) for more details'
             },
             {
               id: 20,
