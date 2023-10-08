@@ -69,7 +69,7 @@ Vue.component(
                             <div class="lead mb-4" v-if="githubusername && repo">
                               <b>View this project on GitHub: </b>
                               <a :href="'https://github.com/' + githubusername + '/' + repo" target="blank">https://github.com/{{githubusername}}/{{repo}}</a>
-                              <iframe class="mt-2" :src="'http://lab.lepture.com/github-cards/card.html?user=' + githubusername + '&amp;repo=' + repo" frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180" allowtransparency="true"></iframe><br>
+                              <iframe class="mt-2" :src="'https://lab.lepture.com/github-cards/card.html?user=' + githubusername + '&amp;repo=' + repo" frameborder="0" scrolling="0" width="400" style="max-width: 70vw" height="180" allowtransparency="true"></iframe><br>
                             </div>
                             <div v-if="pdf && pdf_text && pdf_text != ''">
                               <p class="lead portfolio-item-paragraph">{{pdf_text}}: <a :href="pdf">here</a></p>

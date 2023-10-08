@@ -124,7 +124,7 @@ new Vue(
                 'The General manager was the main manager that was in charge of the global strategy of the AI as well as building. It was using the other managers to take actions and get data. The Army manager was in charge of the army and was using the Economy manager to get the resources needed to build units. The Economy manager was in charge of the economy and resources.',
                 'In the end, I was able to create an AI that was able to beat the built-in AI of the game and got 3rd when competing against AIs of other students of the class (I never played Starcraft before this project, so I was quite happy with this result).',
               ],
-              repo: 'StarcraftAI'
+              repo: 'Starcraft-Bot'
             },
             {
               id: 12,
@@ -159,7 +159,7 @@ new Vue(
                 'This model was able to predict the H-index of a researcher with a standard error of aroung 9. This may seem quite high but it was actually quite good as we had only few abstracts (up to 5 per researcher) and the H-index is a very noisy metric.',
                 'In addition, we were able to show that the co-citation network was more important than the abstracts as the model using only the co-citation network had a lower standard error than the model using only the abstracts.',
               ],
-              repo: 'HIndexPrediction'
+              repo: 'H-index-predictor'
             },
             {
               id: 14,
@@ -419,15 +419,16 @@ new Vue(
               title: 'Screen Space Reflections',
               description: 'Implemented a renderer with Screen Space Reflections and Ray Tracing.',
               image: 'images/projects/ssr/final_ssr.PNG',
-              repo: 'MyOpenGlRenderer',
+              repo: 'SSR-Renderer',
               pdf: 'papers/Report_INF584.pdf',
               pdf_text: 'Find the final report'
             },
             {
               id: 19,
-              title: 'Echo\'s Adventure',
+              title: 'Echo\'s Adventures',
               description: 'An interactive world coded from scratch in C++ using OpenGL.',
               image: 'images/projects/echos adventure/echos_adventure.JPG',
+              repo: 'Echo-s-Adventures',
               // TODO: Find report
             },
             {
@@ -469,6 +470,7 @@ new Vue(
               title: 'Procedural dialog generation',
               description: 'As a team of 5 students, we realized a research project during a year to procedurally generate dialogs between two Non-Play Characters (NPC).',
               image: 'images/projects/psc/graphe.png',
+              repo: 'Procedural-Dialog-Generation'
               // TODO: Find the report
             },
           ],
