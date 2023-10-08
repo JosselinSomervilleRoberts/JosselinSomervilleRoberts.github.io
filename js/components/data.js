@@ -82,6 +82,8 @@ new Vue(
               image: 'images/projects/rl_streets/display.png',
               repo: 'AA228-Project-Autonomous-Vehicle',
               descriptionlist: [
+                'You can see a presentation of the project:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/2Lqs6AzshpI" frameborder="0"></iframe>',
                 'In this project, we created an agent that learns to clean a parking lot.',
                 'The goal of the agent is to autonomously clean a parking lot. This means that the agent had to not only learn how to drive but also cover the most surface in as little time as possible.',
                 'The first step was to create a Gym environment that would simulate the parking lot. This environment had to be fast enough to train the agent in a reasonable amount of time.',
@@ -230,12 +232,12 @@ new Vue(
               description: 'I built a robot arm to pickup and pour beakers into other beakers.',
               image: 'images/projects/robot arm/display.png',
               descriptionlist: [
+                'You can see the robot in action here making a small elephant toothpaste:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/k4rK5P6R8PI" frameborder="0"></iframe>',
                 'In only 2 weeks, as a team of 4, we designed and built from scratch a 5-axis robot arm to pick, move an rotate beackers in order to make chemical reactions.',
                 'As a constrained we had to incorporate in our design: a Stepper, BLDC, DC and Servo motor as well as a cable, gear and belt transmission.',
                 '<img src="images/projects/robot arm/display.png" class="mx-auto d-block img-fluid">',
                 // 'TODO IMAGE SOLIDWORKS',
-                'You can see the robot in action here making a small elephant toothpaste:',
-                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/k4rK5P6R8PI" frameborder="0"></iframe>'
               ]
             },
             {
@@ -245,6 +247,8 @@ new Vue(
               image: 'images/projects/mr resiskers/display.jpg',
               descriptionlist: [
                 'This was the final project of ME218A - Smart Product design. You can find the dedicated website <a href="https://sites.google.com/stanford.edu/mrresiskers">here</a>.',
+                'While I recommend checking the website to understand what is going on, here is a quick demo of the robot:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/vp6l2sRLeEk" frameborder="0"></iframe>',
                 '<img src="images/projects/mr resiskers/display.png" class="mx-auto d-block img-fluid">',
               ],
             },
@@ -282,6 +286,10 @@ new Vue(
               description: 'After Bob v2, I was more than ever motivated to build a working hexapod!',
               image: 'images/projects/bob v3/back.jpg',
               descriptionlist: [
+                'You cam see the evolution of Bob v3 in action here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/EJegv_kdLi0" frameborder="0"></iframe>',
+                'And when Bob v3 met his predecessor Bob v1:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/tPvX0epKcRs" frameborder="0"></iframe>',
                 'As I had learned with Bob v2, I needed to conduct many experiments to validate the new leg design I came up with before starting to print the other legs.',
                 'I decided to use more expensive motors that were more reliable and easier to communicate with as they used bus communication.',
                 'To be sure that I had properly tested the leg, I decided to code every single feature that I wanted Bob v3 to have on the test leg. This included inverse kinematics, motion control with feedback, control of temperature and intensity, and more.',
@@ -334,7 +342,9 @@ new Vue(
                 'Secondly, as it was one of my first experiences with 3D printing, I had made some bad design choices that lead to weak pieces because of hard shapes to print.',
                 'Lastly, I had tried to integrate too many features into one robot. As an example, a major part of the circuit was to control the RGB lights on each phalange which were only there to look good.',
                 'Even though, Bob v2 never did more than crawling with few legs I learned a lot through this project. I knew that I had to do more tests before rushing into building the entire thing. I also needed to learn how to design simpler pieces to make the 3D printing process easier and also to redefine the "real" requirements of the robot to avoid unnecessary complications.',
-                'I was more than ever motivated to start a new robot to use the knowledge I had acquired and that is why I started building Bob v3.'
+                'I was more than ever motivated to start a new robot to use the knowledge I had acquired and that is why I started building Bob v3.',
+                'You can see the beginning of Bob v2 that never walked here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/38Wx9vS37BM" frameborder="0"></iframe>',
               ],
             },
             {
@@ -345,6 +355,8 @@ new Vue(
               descriptionlist: [
                 'During my first year of undergraduate studies, I started working on walking robots.',
                 'These were the first "real" robots I built and I wanted to compare two different approaches: many degrees of freedom mechanisms versus gait generation mechanisms (such as the Klann mechanism).',
+                'You can see the Bob v1 robot in action here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/zXugVYELi-U" frameborder="0"></iframe>',
                 '<b>Quadruped robot - Bob v1</b>',
                 'As this was my first robot, I did not design it. (you can find the files to 3D print it here: https://www.thingiverse.com/thing:1009659)',
                 'However, I build it on my own and decided to create my own circuit and Arduino program for it (similar to C++ code).',
@@ -402,7 +414,10 @@ new Vue(
               image: 'images/projects/ocean_waves/final_result.PNG',
               descriptionlist: [
                 'The objective of this project was to create a real-time fast wave simulation to display high-quality images. This included wave generation, foam rendering, buoyancy estimation, various rendering featues (Layered BRDF, reflections, textures, ...) while giving a lot of control to the user: wind speed, seafoam parameters, object weight, ...',
-                'Most of this was done in shaders to be able to render a 500x500 sea mesh with an animated floating ship made of 250k vertices at 120FPS. Hese is what the final result looks like:',
+                'Most of this was done in shaders to be able to render a 500x500 sea mesh with an animated floating ship made of 250k vertices at 120FPS.',
+                'You can see a brief presentation of the project here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/nDVD9M3eRyM" frameborder="0"></iframe>',
+                'Here is what the final result looks like:',
                 '<img src="images/projects/ocean_waves/final_result.PNG" class="mx-auto d-block img-fluid">',
                 '<img src="images/projects/ocean_waves/screen5.PNG" class="mx-auto d-block img-fluid">',
                 'The waves are generated with a superpostion of wave trains and some 3D Perlin noise (all on the GPU). The seafoam is computed using a combination of the normal direction, height of the sea and gradient of the normal.',
@@ -430,6 +445,8 @@ new Vue(
               image: 'images/projects/echos adventure/echos_adventure.JPG',
               descriptionlist: [
                 'This project was a procedurally generated open-world game coded from scratch in C++ using OpenGL for my first computer graphics class.',
+                'You can see a brief video of the game here:',
+                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/AQMES8Xu4I0" frameborder="0"></iframe>',
                 '<img src="images/projects/echos adventure/echos_adventure.JPG" class="mx-auto d-block img-fluid">',
                 'The player controls Echo, a manually animated wolf that can walk, run and activate runes. The world is procedurally generated using various noises such as Perlin noise and uses many assets. It is decomposed in many biomes, see the figure below:',
                 '<img src="images/projects/echos adventure/echos1.JPG" class="mx-auto d-block img-fluid">',
@@ -441,8 +458,6 @@ new Vue(
                 '<img src="images/projects/echos adventure/echos_rune.png" class="mx-auto d-block img-fluid">',
                 'This was mainly a made up reason for me to learn how to code and use custom shaders. This one was particularly hard to code as it required to detect edges of the rendered image. This was done with a two-pass algorithm. First, I rendered the scene in black and white and then I used a Sobel filter to detect edges. Finally, I used a threshold to only keep the edges that were strong enough. See the figure below:',
                 '<img src="images/projects/echos adventure/echos_adventure.JPG" class="mx-auto d-block img-fluid">',
-                'You can see a brief video of the game here:',
-                '<iframe allowfullscreen class="video" width="98%" height="100%" src="https://www.youtube.com/embed/AQMES8Xu4I0" frameborder="0"></iframe>',
               ],
               repo: 'Echo-s-Adventures',
               pdf: 'papers/Report_INF443.pdf',
