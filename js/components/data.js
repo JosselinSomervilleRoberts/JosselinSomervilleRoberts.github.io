@@ -400,7 +400,7 @@ new Vue(
               title: 'Fast Ocean waves',
               description: 'Using noise superposition computed on the GPU to render realistic ocean waves.',
               image: 'images/projects/ocean_waves/final_result.PNG',
-              decriptionlist: [
+              descriptionlist: [
                 'The objective of this project was to create a real-time fast wave simulation to display high-quality images. This included wave generation, foam rendering, buoyancy estimation, various rendering featues (Layered BRDF, reflections, textures, ...) while giving a lot of control to the user: wind speed, seafoam parameters, object weight, ...',
                 'Most of this was done in shaders to be able to render a 500x500 sea mesh with an animated floating ship made of 250k vertices at 120FPS. Hese is what the final result looks like:',
                 '<img src="images/projects/ocean_waves/final_result.PNG" class="mx-auto d-block img-fluid">',
