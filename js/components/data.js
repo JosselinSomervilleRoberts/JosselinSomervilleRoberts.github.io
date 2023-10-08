@@ -249,7 +249,15 @@ new Vue(
               title: 'RL for cleaning streets',
               description: 'Using a Deep Reinforcement Learning algorithm to train a robot to clean parking lots.',
               image: 'images/projects/rl_streets/display.png',
-              repo: 'AA228-Project-Autonomous-Vehicle'
+              repo: 'AA228-Project-Autonomous-Vehicle',
+              descriptionlist: [
+                'In this project, we created an agent that learns to clean a parking lot.',
+                'The goal of the agent is to autonomously clean a parking lot. This means that the agent had to not only learn how to drive but also cover the most surface in as little time as possible.',
+                'The first step was to create a Gym environment that would simulate the parking lot. This environment had to be fast enough to train the agent in a reasonable amount of time.',
+                'The second step was to create a Deep Reinforcement Learning agent. We experimented with various algorithms such as DQN, DDPG, PPO, and SAC. We also experimented with various reward functions.',
+                'In the end, we were able to train an agent that was able to clean a parking lot in a reasonable amount of time with SAC.',
+                'This involved quite a lot of observation and reward tuning to provide the agent with the right information to learn.',
+              ],
             },
             {
               id: 10,
