@@ -322,7 +322,14 @@ new Vue(
               title: 'H-index prediction',
               description: 'Using a co-citation network and abstracts to predict the H-index of a researcher.',
               image: 'images/projects/hindex/display.ppm',
-              repo: 'CS224W-Project-H-Index'
+              descriptionlist: [
+                'In this project, I created a model to predict the H-index of a researcher using a co-citation network and a list of their abstracts.',
+                'This consisted in two networks then fused with late fusion. The first network was using Node2Vec to embed the co-citation network. The second network was using either Word2Vec, TF-IDF or a BERT model to embed the abstracts.',
+                'The two networks were then fused using a late fusion method that consisted of concatenating the two embeddings and then using a MLP to predict the H-index.',
+                'This model was able to predict the H-index of a researcher with a standard error of aroung 9. This may seem quite high but it was actually quite good as we had only few abstracts (up to 5 per researcher) and the H-index is a very noisy metric.',
+                'In addition, we were able to show that the co-citation network was more important than the abstracts as the model using only the co-citation network had a lower standard error than the model using only the abstracts.',
+              ],
+              repo: 'HIndexPrediction'
             },
             {
               id: 14,
