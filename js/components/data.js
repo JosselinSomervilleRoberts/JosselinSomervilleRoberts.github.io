@@ -479,6 +479,13 @@ new Vue(
               title: 'Pokemon Mystery Dungeon - Remake',
               description: 'As a fan of Pokemon Mystery Dungeon, I decided to implement my own adaptation of the game using Python and Pygame.',
               image: 'images/projects/pokemon/Capture.JPG',
+              descriptionlist: [
+                'This project was a remake of the game Pokemon Mystery Dungeon coded from scratch in Python using Pygame.',
+                '<img src="images/projects/pokemon/Capture.JPG" class="mx-auto d-block img-fluid">',
+                'The game was sadly never finished but I learned a lot about game development and Python.',
+                'This remake included a few changes that I liked. The player controlled 2 pokemons: one main that the player controlled with the keyboard and one secondary that followed the first and only gave bonuses to the main one. The player could switch between the two at any time but also decide to split them to put up two fights at the same time. In that case, the player would control both with a click (which required some pathfinding algorithm to avoid obstacles amd a way to reform into the following formation).',
+                'A basic AI with pathfinding was implemented for ennemies but I did not get time to implement a proper combat system as I was passign the nationwide French exams to enter an engineering school.',
+              ]
             },
             {
               id: 21,
