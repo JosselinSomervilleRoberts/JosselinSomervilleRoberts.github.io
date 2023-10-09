@@ -17,6 +17,24 @@ new Vue(
         'I currently work at the <a href="https://crfm.stanford.edu/">Stanford CRFM (Center for Research on Foundation Models</a> on the <a href="https://github.com/stanford-crfm/helm">HELM project</a> under the supervision of <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>.',
       ],
 
+      papers: [
+        {
+          id: 1,
+          title: 'A Skeleton-based Approach For Rock Crack Detection Towards A Climbing Robot Application',
+          link: 'https://arxiv.org/abs/2309.05139',
+          summary: 'This paper presents a new loss function: SKIL (SKeleton Intersection Loss) for rock crack segmentation. This loss is based on a smooth skeletonization algorithm that enables backpropagation. We show that this loss outperforms other losses on crack segmentation and that it can be used for other tasks such as blood vessel segmentation. In addition we introduce new metrics that better reflects human preferences on thin objects such as cracks.',
+          venue: 'In review for IEEE IRC 2023',
+        },
+        {
+          id: 2,
+          title: 'Projected Task-Specific Layers for Multi-Task Reinforcement Learning',
+          link: 'https://arxiv.org/abs/2309.08776',
+          summary: "This paper introduces a new network achitercure for Multi-Task Reinforcement Learning. This architecture consists of a general dense multitask trunk with some low-rank task-specific layers. Unlike other methods, the two dimensions are fused after each layer and we shod that the network is able to learn a useful mapping between the shared and task-specific world. We show that this architecture outperforms the State-of-the-art on the MT-10 and MT-50 tasks of Metaworld.",
+          venue: 'In review for IEEE ICRA 2024',
+        },
+
+      ],
+
       portfoliorows: [
         {
           id: 1,
@@ -29,7 +47,7 @@ new Vue(
               image: 'images/projects/reachbot/crack.png',
               descriptionlist: [
                 'In this paper we trained several VIT-based model to segment cracks and edges.',
-                'This project was don in collaboration with the <a href="http://bdml.stanford.edu/" >Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University. The goal was to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold.',
+                'This project was done in collaboration with the <a href="http://bdml.stanford.edu/" >Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University. The goal was to enable NASA\'s Reachbot robot to detect cracks and edges on which to hold.',
                 '<img src="images/projects/reachbot/reachbot_diagram.png" class="mx-auto d-block img-fluid">',
                 'The first step was to gather some data as no such data was puclicly available. We gathered 100 images from places like Pinnackles National Park, Monument Valley and the Grand Canyon. In addition, we generated 150 images with DALL-E 2 to increase the diversity',
                 '<img src="images/projects/reachbot/dataset.png" class="mx-auto d-block img-fluid">',

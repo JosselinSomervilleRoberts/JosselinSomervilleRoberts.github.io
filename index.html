@@ -58,6 +58,9 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#papers">Papers</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
@@ -78,7 +81,7 @@
   <div id="app_component" class="experiment-block">
     <app v-bind:name="name" v-bind:email="email" v-bind:linkedinusername="linkedinusername"
       v-bind:stanfordprofile="stanfordprofile" v-bind:googlescholar="googlescholar" v-bind:image="image"
-      v-bind:title="title" v-bind:githubusername="githubusername" v-bind:introitems="introitems"
+      v-bind:title="title" v-bind:githubusername="githubusername" v-bind:introitems="introitems" v-bind:papers="papers"
       v-bind:portfoliorows="portfoliorows" v-bind:jobitems="jobitems" v-bind:educationitems="educationitems" />
   </div>
 
@@ -107,6 +110,8 @@
 
   <!-- Custom components -->
   <script src="js/components/intro.js"></script>
+  <script src="js/components/papers.js"></script>
+  <script src="js/components/paperItem.js"></script>
   <script src="js/components/portfolio.js"></script>
   <script src="js/components/portfolioRow.js"></script>
   <script src="js/components/portfolioItem.js"></script>

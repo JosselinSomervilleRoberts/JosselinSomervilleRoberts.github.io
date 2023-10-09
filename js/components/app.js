@@ -38,6 +38,10 @@ Vue.component(
                 type: Array,
                 required: true,
             },
+            papers: {
+                type: Array,
+                required: true,
+            },
             portfoliorows: {
                 type: Array,
                 required: true,
@@ -65,6 +69,9 @@ Vue.component(
                     :githubusername="githubusername"
                     :items="introitems"
                 ></intro>
+                <papers
+                    :items="papers"
+                ></papers>
                 <portfolio
                     :rows="portfoliorows"
                     :githubusername="githubusername"
