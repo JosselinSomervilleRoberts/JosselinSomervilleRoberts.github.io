@@ -531,6 +531,11 @@ new Vue(
               title: 'Mechanical Analysis of 3D printed infills',
               description: 'Using Finite Element Analysis to determine the best infill pattern for 3D printed parts.',
               image: 'images/projects/3d_printing/display.jpg',
+              descriptionlist: [
+                'This project was a research project conducted during my Master\'s at Ecole Polytechnique. The goal was to determine the best infill pattern for 3D printed parts.',
+                'We used Finite Element Analysis to simulate the behavior of 3D printed parts with different infill patterns. We compared various patterns such as honeycomb, square, triangular, and more. We also compared different infill densities.',
+                '<img src="images/projects/3d_printing/display.jpg" class="mx-auto d-block img-fluid">',
+              ],
               pdf: 'papers/Report_MEC552B.pdf',
               pdf_text: 'Find the final report'
             },
