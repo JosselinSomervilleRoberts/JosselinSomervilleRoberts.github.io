@@ -68,7 +68,7 @@ Vue.component(
                 <div class="col-sm-12 col-lg-8" id="intro-section" style="margin-bottom: 1rem; margin-top:1rem">
                   <h4>{{name}}</h4>
                   <p class="lead"><b>{{title}}</b></p>
-                  <p class="lead" style="font-size: 14pt" v-for="item in items" v-html="item"></p>
+                  <p class="lead" style="font-size: 14pt; text-align: justify;" v-for="item in items" v-html="item"></p>
                   <div id="social2" class="mt-4">
                     <p class="email">{{email}}</p>
                       <ul class="list-inline social-buttons">

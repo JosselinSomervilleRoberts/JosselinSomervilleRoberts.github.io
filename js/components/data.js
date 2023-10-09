@@ -14,7 +14,7 @@ new Vue(
       introitems: [
         'I am a current Master\'s student in Computer Science (AI Track) at Stanford University, where I am advised by <a href="https://profiles.stanford.edu/christopher-gregg" target="blank">Christopher Gregg</a>. I graduated in 2022 from Ecole Polytechnique (France) where I obtained my Engineering degree (M.S. equivalent) in Computer Science and Applied Mathematics (Image, Vision, and Learning track). Before that I followed the French CPGE system (PT) at Lycée Jean-Baptiste Say (France), where I graduated as <a href="https://www.banquept.fr/2019_result/resultats_concours.php">valedictorian</a> (2500 candidates) in 2019.',
         'I am interested in the intersection of machine learning and robotics, and in particular in the application of deep learning to robotics. This includes Computer Vision, Reinforcement Learning and also Natural Language Processing.',
-        'I currently work at the <a href="https://crfm.stanford.edu/">Stanford CRFM (Center for Research on Foundation Models</a> on the <a href="https://github.com/stanford-crfm/helm">HELM project</a> under the supervision of <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>.',
+        'I currently work at the <a href="https://crfm.stanford.edu/">Stanford CRFM (Center for Research on Foundation Models</a> on the <a href="https://github.com/stanford-crfm/helm">HELM project</a> under the supervision of <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>. In addition, I also work on the <a href="https://madrona-engine.github.io/">Madrona Engine</a> under the supervision of <a href="https://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>.',
       ],
 
       papers: [
@@ -582,10 +582,20 @@ new Vue(
 
       jobitems: [
         {
+          id: 0,
+          title: 'Madrona',
+          subtitle: 'Research Assistant',
+          description: 'I work on the Madrona Engine, a research game engine that achieves extremely high throughput. I work on the adaptation of RL algorithm to huge batch sizes that are now possible with the engine. Supervised by <a href="https://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>',
+          image: 'images/madrona.png',
+          dates: 'October 2023 - Present',
+          link: 'https://madrona-engine.github.io/',
+          location: 'Stanford, CA',
+        },
+        {
           id: 1,
           title: 'Nvidia',
           subtitle: 'Machine Leaning Intern',
-          description: 'I worked in the Computer Vision team for autonomous driving. I developped new augmentations to simulate droplets, patches of dirt and many more obstacles on a camera lens. I then trained a model to detect these',
+          description: 'I worked in the Computer Vision team for autonomous driving. I developped new augmentations to simulate droplets, patches of dirt and many more obstacles on a camera lens. I then trained a model to detect these.',
           image: 'images/nvidia.png',
           dates: 'June 2023 - September 2023',
           link: 'https://www.nvidia.com/en-us/self-driving-cars/',
@@ -595,7 +605,7 @@ new Vue(
           id: 2,
           title: 'Stanford CRFM',
           subtitle: 'Research Assistant',
-          description: 'I am working on the HELM project. The goal of HELM is to provide a unified framework to evalute foundation models.',
+          description: 'I am working on the HELM project. The goal of HELM is to provide a unified framework to evalute foundation models. Supervised by <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>',
           image: 'images/crfm.jpg',
           dates: 'April 2023 - Present',
           link: 'https://crfm.stanford.edu/',
@@ -605,7 +615,7 @@ new Vue(
           id: 3,
           title: 'Stanford Deliberation Platform',
           subtitle: 'Research Assistant',
-          description: 'This is a video discussion platform for small groups of people designed to facilitate a structured and equitable conversation with better opportunity for participants to speak up',
+          description: 'This is a video discussion platform for small groups of people designed to facilitate a structured and equitable conversation with better opportunity for participants to speak up. Supervised by <a href="https://web.stanford.edu/~ashishg/">Ashish Goel</a>',
           image: 'images/stanford.jpg',
           dates: 'January 2023 - March 2023',
           link: 'https://stanforddeliberate.org',
