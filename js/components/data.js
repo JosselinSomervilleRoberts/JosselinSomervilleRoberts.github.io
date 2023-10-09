@@ -518,6 +518,12 @@ new Vue(
               title: 'Cemantix - Remake',
               description: 'Guess the word of the day given the semantic similarity with other words.',
               image: 'images/projects/SemApi/display.jpg',
+              descriptionlist: [
+                'This project was a remake of the game Cemantix coded from scratch in Python using Flask for the backend and React for the frontend.',
+                'Each day, there was a new word to guess and the goal was to guess it in the least number of tries. After each guess, you would receive a score based on the semantic similarity between the word you guessed and the word of the day. The semantic similarity was computed using a word embedding model trained on the French Wikipedia.',
+                '<img src="images/projects/SemApi/display.jpg" class="mx-auto d-block img-fluid">',
+                'We had a lot of fun playing it with some friends but decided to stop the project as we did not have enough time to maintain it.',
+              ],
               repo: 'SemAPI'
             },
             {
