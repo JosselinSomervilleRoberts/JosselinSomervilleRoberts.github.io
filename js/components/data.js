@@ -544,6 +544,16 @@ new Vue(
               title: 'Procedural dialog generation',
               description: 'As a team of 5 students, we realized a research project during a year to procedurally generate dialogs between two Non-Play Characters (NPC).',
               image: 'images/projects/psc/graphe.png',
+              descriptionlist: [
+                'This project was a research project conducted during my Master\'s at Ecole Polytechnique. It was a year-long project with a team of 5 students (PSC).',
+                'The goal was to generate a structure so that dialogs could be generated procedurally between two Non-Play Characters (NPC). The idea was to be able to create an immersive world with many NPCs that could interact with each other so that the world felt alive for the player. This was in partnership with Ubisoft.', ,
+                '<strong>DISCLAIMER:</strong> This project was conducted before the LLM revolution and that is why we did not explore a learning-based approach. This was a deliberate choice as we wanted to explore other approaches.',
+                'We ended up creating a structure to represent a story as a graph. Some part of the graph represented the minimal information while other parts represented additional information that could be specified based on the talkative nature of the NPC, knowledge of the NPC or even during the conversation. Here is an example of a graph (in French):',
+                '<img src="images/projects/psc/graphe.png" class="mx-auto d-block img-fluid">',
+                'The story was encoded in an information style so that each NPC could phrase it based on its personality. We also created a system to generate the dialogues based on the graph. Here is a summary of our conversation algorithm (in French):',
+                '<img src="images/projects/psc/algorigramme.JPG" class="mx-auto d-block img-fluid">',
+                'Today this work is obsolete since the LLM revolution but it was a great experience to work on a research project with a team. I am very proud of the work we did and I even got the chance to present it at PFIA 2021 (See the presentation <a href="https://www.youtube.com/watch?v=hPAs4PTNufc&ab_channel=AFJV">here</a>).',
+              ],
               repo: 'Procedural-Dialog-Generation'
               // TODO: Find the report
             },
